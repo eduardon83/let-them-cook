@@ -1,0 +1,52 @@
+/* main.css — design tokens and app shell. UI component styles live in ui.css. */
+:root {
+  --ink: #2b2a33;
+  --ink-soft: #5d5a68;
+  --paper: #fbf6ec;
+  --paper-2: #f4ecdc;
+  --line: rgba(43, 42, 51, 0.12);
+  --saffron: #f2a33a;
+  --saffron-deep: #d9821a;
+  --tomato: #e4572e;
+  --basil: #3f8f5b;
+  --plum: #6b4fa0;
+  --sky: #3b8fc4;
+  --gold: #ffd27a;
+  --glass: rgba(251, 246, 236, 0.86);
+  --shadow: 0 18px 40px -18px rgba(30, 24, 40, 0.45), 0 2px 6px rgba(30, 24, 40, 0.08);
+  --radius: 18px;
+  --font-display: 'Fraunces Variable', 'Fraunces', Georgia, serif;
+  --font-ui: 'Lexend Variable', 'Lexend', system-ui, sans-serif;
+  color-scheme: light;
+}
+:root[data-night='true'] {
+  --glass: rgba(30, 34, 58, 0.82);
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #f1e3cb; color: var(--ink); font-family: var(--font-ui); }
+#app { position: fixed; inset: 0; }
+#stage-world { position: absolute; inset: 0; }
+#world { display: block; width: 100%; height: 100%; touch-action: none; outline: none; }
+#labels { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 1; }
+#ui { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+#ui > * { pointer-events: auto; }
+
+#loader { position: absolute; inset: 0; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, #fff8ea, #f1e0c2); z-index: 100; transition: opacity 0.9s ease, visibility 0.9s; }
+#loader.done { opacity: 0; visibility: hidden; }
+.loader-card { text-align: center; }
+.loader-title { font-family: var(--font-display); font-size: 44px; font-weight: 700; margin: 18px 0 4px; letter-spacing: -0.02em; }
+.loader-text { color: var(--ink-soft); margin: 0 0 18px; }
+.loader-bar { width: 220px; height: 8px; border-radius: 99px; background: rgba(43, 42, 51, 0.1); overflow: hidden; margin: 0 auto; }
+.loader-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--saffron), var(--tomato)); border-radius: inherit; transition: width 0.4s ease; }
+.loader-pot { position: relative; width: 84px; height: 64px; margin: 0 auto; border-radius: 0 0 26px 26px; background: var(--ink); }
+.loader-pot::before { content: ''; position: absolute; left: -10px; right: -10px; top: -6px; height: 10px; border-radius: 6px; background: var(--ink); }
+.loader-pot span { position: absolute; bottom: 72px; width: 12px; height: 12px; border-radius: 50%; background: #e9e1d4; animation: steam 1.8s ease-in infinite; }
+.loader-pot span:nth-child(1) { left: 16px; }
+.loader-pot span:nth-child(2) { left: 36px; animation-delay: 0.6s; }
+.loader-pot span:nth-child(3) { left: 56px; animation-delay: 1.2s; }
+@keyframes steam { 0% { transform: translateY(10px) scale(0.6); opacity: 0; } 30% { opacity: 0.9; } 100% { transform: translateY(-40px) scale(1.8); opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}

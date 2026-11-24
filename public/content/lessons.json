@@ -1,0 +1,5090 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "Let'em Cook!",
+    "edition": "First edition · English as the default target language · CEFR A1 to B1",
+    "checkedBy": "",
+    "checkedOn": ""
+  },
+  "roles": [
+    {
+      "id": "head-chef",
+      "name": "Head Chef",
+      "cast": "olivia",
+      "mission": "You lead your brigade. You read the order and give clear instructions.",
+      "does": [
+        "Reads the order",
+        "Gives instructions",
+        "Checks the dish"
+      ],
+      "phrases": [
+        "First, …",
+        "Please bring me …",
+        "Good job!"
+      ],
+      "teacherCanPlay": true,
+      "quietFriendly": false,
+      "seated": true,
+      "kind": "kitchen"
+    },
+    {
+      "id": "sous-chef",
+      "name": "Sous-Chef",
+      "cast": "luka",
+      "mission": "You help the Head Chef. You read, write and check.",
+      "does": [
+        "Writes the list",
+        "Checks the order",
+        "Helps with words"
+      ],
+      "phrases": [
+        "Is it right?",
+        "Yes, that's right.",
+        "Can you say it again, please?"
+      ],
+      "teacherCanPlay": false,
+      "quietFriendly": true,
+      "seated": true,
+      "kind": "kitchen"
+    },
+    {
+      "id": "line-cook",
+      "name": "Line Cook",
+      "cast": "yusuf",
+      "mission": "You listen to the Head Chef. You find, cook and show.",
+      "does": [
+        "Listens carefully",
+        "Finds the cards",
+        "Shows the steps"
+      ],
+      "phrases": [
+        "Yes, Chef!",
+        "Sorry, I don't understand.",
+        "Is this right?"
+      ],
+      "teacherCanPlay": false,
+      "quietFriendly": false,
+      "seated": true,
+      "kind": "kitchen"
+    },
+    {
+      "id": "waiter",
+      "name": "Waiter",
+      "cast": "noor",
+      "mission": "You welcome the guests. You take the order to the kitchen.",
+      "does": [
+        "Says hello",
+        "Takes the order",
+        "Serves the food"
+      ],
+      "phrases": [
+        "Hello! Welcome!",
+        "What would you like?",
+        "Here you are."
+      ],
+      "teacherCanPlay": true,
+      "quietFriendly": false,
+      "seated": true,
+      "kind": "dining"
+    },
+    {
+      "id": "customer",
+      "name": "Customer",
+      "cast": "guest",
+      "mission": "You visit and order. You say what you like.",
+      "does": [
+        "Reads the menu",
+        "Orders food",
+        "Says thank you"
+      ],
+      "phrases": [
+        "I'd like …, please.",
+        "How much is it?",
+        "Thank you!"
+      ],
+      "teacherCanPlay": true,
+      "quietFriendly": false,
+      "seated": true,
+      "kind": "dining"
+    },
+    {
+      "id": "vendor",
+      "name": "Market Vendor",
+      "cast": "tomas",
+      "mission": "You sell food at the market. You answer and give the cards.",
+      "does": [
+        "Answers questions",
+        "Says the price",
+        "Gives the ingredient cards"
+      ],
+      "phrases": [
+        "Yes, I do.",
+        "No, I don't. Sorry!",
+        "It's … coins."
+      ],
+      "teacherCanPlay": true,
+      "quietFriendly": false,
+      "seated": true,
+      "kind": "market"
+    },
+    {
+      "id": "critic",
+      "name": "Food Critic",
+      "cast": "petra",
+      "mission": "You taste and tell. You say two good things and one wish.",
+      "does": [
+        "Looks and listens",
+        "Writes a short review",
+        "Gives kind feedback"
+      ],
+      "phrases": [
+        "I liked …",
+        "It was …",
+        "Next time, maybe …"
+      ],
+      "teacherCanPlay": true,
+      "quietFriendly": true,
+      "seated": true,
+      "kind": "dining"
+    },
+    {
+      "id": "guardian",
+      "name": "Language Guardian",
+      "cast": "lena",
+      "mission": "You keep our kitchen language first, in a kind way. You keep the time and ring the bell.",
+      "does": [
+        "Shows the language card",
+        "Keeps the time",
+        "Rings the kitchen bell"
+      ],
+      "phrases": [
+        "In English, please!",
+        "Two minutes left.",
+        "Great words!"
+      ],
+      "teacherCanPlay": true,
+      "quietFriendly": true,
+      "seated": true,
+      "kind": "support"
+    }
+  ],
+  "phases": [
+    {
+      "id": "mise",
+      "name": "Mise en place",
+      "purpose": "Warm up and wake up the words with the picture word cards."
+    },
+    {
+      "id": "order",
+      "name": "The Order",
+      "purpose": "The host gives the mission. Brigades get their roles and cards."
+    },
+    {
+      "id": "cook",
+      "name": "Let'em Cook!",
+      "purpose": "The main task. Brigades need the language to get it done."
+    },
+    {
+      "id": "service",
+      "name": "Service",
+      "purpose": "Brigades serve their work to customers, critics or the class."
+    },
+    {
+      "id": "taste",
+      "name": "Taste & Tell",
+      "purpose": "Look back, stamp the Kitchen Passport and keep one word."
+    }
+  ],
+  "teamTypes": [
+    {
+      "id": "mixed-language",
+      "label": "Mixed home languages",
+      "recommended": true,
+      "description": "Each brigade mixes learners with different home languages, so the target language becomes the language everyone shares.",
+      "tip": "Check that every brigade has one confident speaker and one learner who likes the quiet Sous-Chef role."
+    },
+    {
+      "id": "same-language",
+      "label": "Same home language",
+      "recommended": false,
+      "description": "Learners who share a home language work together. Helpful in the first days or for new arrivals.",
+      "tip": "Give each brigade a Language Guardian so the target language stays first and the home language stays a bridge."
+    },
+    {
+      "id": "mixed-level",
+      "label": "Mixed levels",
+      "recommended": false,
+      "description": "Newer and more confident learners share a brigade, so peers model the language for each other.",
+      "tip": "Rotate the Head Chef role so the most confident learner does not do all the talking."
+    },
+    {
+      "id": "random",
+      "label": "Random draw",
+      "recommended": false,
+      "description": "Learners draw a brigade card. Quick, fair and good for new friendships.",
+      "tip": "Look at the result for one minute: swap a learner who needs a buddy or a quiet seat."
+    }
+  ],
+  "needs": [
+    {
+      "id": "dyslexia",
+      "label": "Dyslexia-friendly",
+      "description": "Clear font, more space and less text on every card.",
+      "adaptations": [
+        "Read every mission card aloud once before the task starts.",
+        "Let the Sous-Chef write key words only, not full sentences.",
+        "Give recipe and order cards with one step per line and a picture on each line.",
+        "Coloured overlays are welcome if a learner already uses them."
+      ]
+    },
+    {
+      "id": "large-print",
+      "label": "Large print",
+      "description": "Bigger cards, bigger words, fewer items per page.",
+      "adaptations": [
+        "Print word cards at the large size and use fewer words (8–12).",
+        "Write the phrases of the day in big letters on the board.",
+        "Seat learners near the board and the demo table."
+      ]
+    },
+    {
+      "id": "low-literacy",
+      "label": "Low literacy or new to the alphabet",
+      "description": "Picture-first cards and fewer words.",
+      "adaptations": [
+        "Start with 6–8 words and add more in the next lesson.",
+        "Model every phrase with a gesture and say it together in chorus.",
+        "Accept pointing first, then the word, then the full sentence.",
+        "Give writing jobs to a buddy, and give the learner a speaking or showing job."
+      ]
+    },
+    {
+      "id": "colour-vision",
+      "label": "Colour vision differences",
+      "description": "Shapes and patterns, never colour alone.",
+      "adaptations": [
+        "Brigades have a colour and a shape: always say the shape too (the Circle team).",
+        "In colour games, name the food as well (a red tomato), so colour is never the only clue.",
+        "Do not ask learners to sort or match by colour alone."
+      ]
+    },
+    {
+      "id": "low-vision",
+      "label": "Low vision",
+      "description": "High contrast, big pictures and things to touch.",
+      "adaptations": [
+        "Add real objects or toy food the learner can hold and describe.",
+        "Describe every picture aloud when you show it.",
+        "Give a seat near the light, the board and the speaker."
+      ]
+    },
+    {
+      "id": "hearing",
+      "label": "Deaf or hard of hearing",
+      "description": "Visual signals, clear faces and written steps.",
+      "adaptations": [
+        "Use a hand signal or a light together with the kitchen bell.",
+        "Face the class when you speak; do not speak while you write on the board.",
+        "Write the task steps on the board as well as saying them.",
+        "Give the brigade a quieter corner for the speaking task."
+      ]
+    },
+    {
+      "id": "mobility",
+      "label": "Mobility",
+      "description": "Every role can be played sitting down.",
+      "adaptations": [
+        "Vendors, waiters and visitors come to the tables, not the other way round.",
+        "Keep wide, clear paths between tables and stalls.",
+        "Put cards and materials within easy reach on the table."
+      ]
+    },
+    {
+      "id": "anxiety",
+      "label": "Speaking anxiety",
+      "description": "Low pressure, quiet roles and real choice.",
+      "adaptations": [
+        "Offer the Sous-Chef or Critic role: reading, writing and checking first, speaking when ready.",
+        "Let learners practise the phrases in pairs before any speaking in front of others.",
+        "The brigade presents together; nobody performs alone in front of the class.",
+        "Offer a 'next round' card: a learner can watch one round and join the next."
+      ]
+    },
+    {
+      "id": "newcomers",
+      "label": "New arrivals",
+      "description": "First days in the language and in the group.",
+      "adaptations": [
+        "Pair the learner with a buddy, if possible one who shares a home language.",
+        "Start with pointing and yes/no answers; that is real participation.",
+        "Invite home-language words on the word cards and on the poster.",
+        "Show the routine: the five phases are the same in every mission."
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "answers-checked",
+      "label": "I checked the content myself",
+      "detail": "I read every word, phrase, price and answer key for this mission against my curriculum before class."
+    },
+    {
+      "id": "readable",
+      "label": "Readable from the back row",
+      "detail": "Printed cards and board writing are big and clear. I tested one card from the back of the room."
+    },
+    {
+      "id": "visual-spoken",
+      "label": "Instructions are seen and heard",
+      "detail": "Every step is said aloud, shown with a gesture or picture, and written on the board."
+    },
+    {
+      "id": "food-safety",
+      "label": "No real food without a safety check",
+      "detail": "If I bring real food, I checked school rules, ingredient labels, hygiene and hand washing first. Nobody has to taste."
+    },
+    {
+      "id": "allergies",
+      "label": "Allergies known",
+      "detail": "I know the allergies in my class (for example nuts, milk, egg, gluten) and removed those items from real food and from tasting."
+    },
+    {
+      "id": "dietary",
+      "label": "Dietary choices respected",
+      "detail": "Halal, kosher, vegetarian, vegan and other choices are respected. I used the word filter for pork, alcohol or meat where needed."
+    },
+    {
+      "id": "no-disclosure",
+      "label": "No forced personal stories",
+      "detail": "Learners are never asked to talk about their home country, family or journey. Invented or favourite examples are always fine."
+    },
+    {
+      "id": "seated",
+      "label": "Every role works seated",
+      "detail": "Vendors, waiters and visitors can come to the tables. Paths between tables are clear."
+    },
+    {
+      "id": "quiet-corner",
+      "label": "A quiet corner is ready",
+      "detail": "There is a calm place where a learner can take a short break and come back when ready."
+    },
+    {
+      "id": "home-language",
+      "label": "Home languages are welcome",
+      "detail": "Home languages are a bridge, never a fault. The Language Guardian reminds kindly and never punishes."
+    },
+    {
+      "id": "sound",
+      "label": "Sound is gentle",
+      "detail": "The kitchen bell is soft, and I also use a visual signal. Noise stays at a level where everyone can hear their partner."
+    },
+    {
+      "id": "photo-consent",
+      "label": "Photos only with consent",
+      "detail": "I take photos only with consent from learners (and guardians where required). I photograph work, not faces, when in doubt."
+    }
+  ],
+  "twists": [
+    {
+      "title": "The critic is here!",
+      "text": "For two minutes, add please and thank you to every sentence."
+    },
+    {
+      "title": "Swap the aprons",
+      "text": "The Head Chef and one Line Cook swap roles until the bell."
+    },
+    {
+      "title": "Slow motion kitchen",
+      "text": "For one minute, speak and move in slow motion. Every word is very clear."
+    },
+    {
+      "title": "Echo kitchen",
+      "text": "The brigade repeats each instruction of the Head Chef, like an echo."
+    },
+    {
+      "title": "Whisper service",
+      "text": "For two minutes, everyone whispers. Listen well!"
+    },
+    {
+      "title": "Word gift",
+      "text": "Teach another brigade one word in a language you know. Learn one word from them."
+    },
+    {
+      "title": "Mystery ingredient",
+      "text": "The teacher gives your brigade one new word card. Use it in your dish."
+    },
+    {
+      "title": "Double order",
+      "text": "Every order is now for two people. Change the numbers!"
+    },
+    {
+      "title": "Kind words",
+      "text": "Go to another brigade and say one kind thing about their work."
+    },
+    {
+      "title": "Lost card",
+      "text": "Give one card to the next brigade. Ask for it back politely."
+    },
+    {
+      "title": "Chef's voice",
+      "text": "Say your next order in a funny voice: a robot, a giant or a mouse. You can pass."
+    },
+    {
+      "title": "New word please",
+      "text": "Nobody can say 'good' for two minutes. Find a new word: tasty, great, nice…"
+    }
+  ],
+  "tutorial": {
+    "slides": [
+      {
+        "id": "welcome",
+        "focus": "overview",
+        "title": "Welcome to Let'em Cook!",
+        "chef": "Welcome to my kitchen! Here, your class runs a restaurant town, and the new language is how we cook.",
+        "text": "Let'em Cook! is a role-play game for learners of a new language, from age 13 to adult. Your class works in brigades and plays real kitchen and restaurant jobs. Every lesson is one mission with a full plan, ready to print and play.",
+        "bullets": [
+          "For newcomers, refugees, exchange students and adult learners",
+          "CEFR A1 to B1",
+          "One mission = one lesson of 50 to 90 minutes"
+        ]
+      },
+      {
+        "id": "ingredients",
+        "focus": "pantry",
+        "title": "Words are the ingredients",
+        "chef": "No ingredients, no dish! In this kitchen, words are the ingredients, so we always start with mise en place.",
+        "text": "Each mission has 24 picture word cards. You choose how many to use, from 6 to 24, and filter items such as pork or alcohol. Learners can write the word in their own language on each card.",
+        "bullets": [
+          "Mise en place: wake up the words first",
+          "Pictures first, so new readers can play",
+          "Home languages are a bridge on every card"
+        ]
+      },
+      {
+        "id": "brigades",
+        "focus": "stove",
+        "title": "Brigades and roles",
+        "chef": "Every brigade needs a Head Chef, a Sous-Chef and Line Cooks. And yes, you can step into any role too!",
+        "text": "Learners work in teams called brigades. Each role has a card with a mission, simple jobs and phrases. There is always a quiet role, and every role can be played sitting down.",
+        "bullets": [
+          "Head Chef, Sous-Chef, Line Cook, Waiter, Customer, Market Vendor, Food Critic",
+          "The Language Guardian keeps the target language first, kindly",
+          "You can play the vendor, customer or critic for a small class"
+        ]
+      },
+      {
+        "id": "phases",
+        "focus": "pass",
+        "title": "Five steps, every time",
+        "chef": "Every mission follows the same five steps. Your learners know the routine, so they can focus on the language.",
+        "text": "Mise en place warms up the words. The Order gives the mission. Let'em Cook! is the main task, where the brigade needs the language to succeed. Service shows the work to others, and Taste & Tell closes the lesson.",
+        "bullets": [
+          "Mise en place · The Order · Let'em Cook! · Service · Taste & Tell",
+          "Real information gaps: one person knows what the others need",
+          "Secret ingredient cards add a playful surprise"
+        ]
+      },
+      {
+        "id": "plan",
+        "focus": "dining",
+        "title": "Plan, print, play",
+        "chef": "Tell me about your class, and I will set the tables. Then print the pack and play!",
+        "text": "Open a mission and plan your class: number of learners, number of words, home languages and specific needs. The app builds the brigades and the print pack with role cards, word cards, mission cards and passports.",
+        "bullets": [
+          "Class size and brigades",
+          "Words and food filters",
+          "Needs: dyslexia, large print, hearing, mobility and more",
+          "Check every fact and answer yourself before class"
+        ]
+      },
+      {
+        "id": "taste",
+        "focus": "door",
+        "title": "Taste & Tell",
+        "chef": "At the end, we taste and tell. Every learner stamps a Kitchen Passport and keeps one word to remember.",
+        "text": "Learners rate their own can-do statements on a taste scale of faces. Rewards celebrate learning and effort, never a ranking of people. Each finished mission adds a new building to your village.",
+        "bullets": [
+          "Self-assessment with faces: not yet, getting there, yes!",
+          "Kitchen Passport stamps and mission seals",
+          "The village grows as your class completes missions"
+        ]
+      },
+      {
+        "id": "trail",
+        "focus": "map",
+        "title": "Follow the trail",
+        "chef": "Eight missions wait along the trail, from the market to the Grand Restaurant. Ready? Let'em cook!",
+        "text": "The valley map shows eight places on one trail. Each place is one mission, from A1 at Market Square to B1 at the Critic's Tower, and a big finale at the Grand Restaurant. Click a place to hear the host and open the plan.",
+        "bullets": [
+          "Start at Market Square with The Ingredient Hunt",
+          "Each mission recycles words from the missions before",
+          "Start the adventure when you are ready"
+        ]
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "id": "market",
+      "order": 1,
+      "location": "Market Square",
+      "title": "The Ingredient Hunt",
+      "tagline": "Ask, find and fill your basket: the market is open!",
+      "host": {
+        "cast": "tomas",
+        "name": "Tomás",
+        "title": "Market Vendor"
+      },
+      "level": "A1",
+      "minutes": 50,
+      "focus": {
+        "functions": [
+          "Naming fruit and vegetables",
+          "Asking for things",
+          "Saying how many"
+        ],
+        "grammar": [
+          "Do you have …? Yes, I do. / No, I don't.",
+          "How many? – Four, please.",
+          "Plural -s (one tomato, two tomatoes)"
+        ],
+        "vocabulary": "Fruit and vegetables, colours, numbers 1–20"
+      },
+      "pitch": [
+        "Good morning, my friends! Welcome to my market.",
+        "My stall has tomatoes, apples, lemons and many more colours.",
+        "Your kitchen is empty, and your Head Chef has a picture list.",
+        "Come and ask me: do you have tomatoes? How many?",
+        "Grab a bag. The Ingredient Hunt starts now!"
+      ],
+      "summary": "Brigades collect the ingredients on a picture-only shopping list. Only the Head Chef sees the list, and only the vendors know what they sell, so learners need to ask and answer to fill the basket. Language: food names, numbers 1–20 and 'Do you have…?'.",
+      "objectives": [
+        "I can name 10 fruits and vegetables.",
+        "I can ask: Do you have tomatoes?",
+        "I can answer: Yes, I do. / No, I don't.",
+        "I can say how many: four, please."
+      ],
+      "successCriteria": [
+        "Each brigade collects at least 8 of the 10 ingredients on its list.",
+        "Line Cooks ask the vendor with 'Do you have …?' and give a number when asked 'How many?'.",
+        "Vendors answer with 'Yes, I do / No, I don't' and say a price in coins.",
+        "Most learners name at least 6 foods without looking at the word."
+      ],
+      "materials": [
+        "Word ingredient cards: one set per brigade, plus one set per vendor stall",
+        "Shopping list card: one per brigade",
+        "Stall cards A and B: one per vendor",
+        "A paper bag or tray per brigade (the basket)",
+        "Kitchen bell (or a cup and spoon) and a visual signal",
+        "Optional: toy fruit and vegetables"
+      ],
+      "preparation": [
+        "Print the pack. Cut the word ingredient cards.",
+        "Sort the vendor word cards: Stall A gets the foods on Stall card A, Stall B the foods on Stall card B.",
+        "Set up the stalls on tables at the side of the room, or plan for vendors to visit the brigades.",
+        "Write on the board: Do you have …? Yes, I do. / No, I don't. How many?",
+        "Answer key: every item on the shopping list is at Stall A, Stall B or both (tomatoes are at both)."
+      ],
+      "roles": {
+        "teamSize": {
+          "min": 3,
+          "ideal": 4,
+          "max": 5
+        },
+        "perTeam": [
+          {
+            "role": "head-chef",
+            "count": 1
+          },
+          {
+            "role": "sous-chef",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "line-cook",
+            "fill": true
+          }
+        ],
+        "shared": [
+          {
+            "role": "vendor",
+            "perTeams": 2,
+            "teacherCanCover": true
+          }
+        ]
+      },
+      "flow": [
+        {
+          "phase": "mise",
+          "minutes": 8,
+          "title": "Wake up the words",
+          "steps": [
+            "Show one word card at a time. Say the word; learners repeat it twice.",
+            "Play 'Point to it': say a food; brigades point to the card on their table.",
+            "Count together from 1 to 20 with the cards (one apple, two apples…).",
+            "Ask about colours: 'What colour is the tomato?' – 'Red!'"
+          ],
+          "tip": "Invite learners to say the word in their home language too. Write two or three on the board next to the picture."
+        },
+        {
+          "phase": "order",
+          "minutes": 5,
+          "title": "Tomás opens the market",
+          "steps": [
+            "Play the Tomás pitch, or read it aloud.",
+            "Give out role cards. Head Chefs get the shopping list face down.",
+            "Model the dialogue with a vendor: 'Do you have lemons?' – 'Yes, I do. How many?' – 'Two, please.'",
+            "Show the rule: only the Head Chef looks at the list. Line Cooks go to the stalls."
+          ],
+          "tip": "Model a 'No, I don't' answer too, so learners know it is a normal part of the game."
+        },
+        {
+          "phase": "cook",
+          "minutes": 20,
+          "title": "The Ingredient Hunt",
+          "steps": [
+            "The Head Chef looks at one picture and tells a Line Cook: 'Four tomatoes, please.'",
+            "The Line Cook goes to a stall and asks: 'Do you have tomatoes?'",
+            "The vendor answers. If yes: 'How many?' – 'Four, please.' The vendor gives the card and says the price.",
+            "The Line Cook brings the card back. The Sous-Chef writes the word and ticks the list.",
+            "Repeat. Line Cooks take turns, so everybody visits a stall."
+          ],
+          "tip": "If you play the vendor yourself, serve one brigade at a time and keep your answers short and slow."
+        },
+        {
+          "phase": "service",
+          "minutes": 10,
+          "title": "Show your basket",
+          "steps": [
+            "Each brigade shows its basket to the next brigade.",
+            "They say together: 'We have four tomatoes, two onions…'",
+            "The other brigade checks with the shopping list and says 'Yes!' or asks 'How many?'",
+            "Count the coins together: how much did the basket cost?"
+          ],
+          "tip": "Celebrate every ingredient found. A missing item is a reason to ask again, not a mistake."
+        },
+        {
+          "phase": "taste",
+          "minutes": 7,
+          "title": "Taste & Tell",
+          "steps": [
+            "Learners circle a face for each 'I can' sentence on the Kitchen Passport.",
+            "Each learner says or writes one word to remember.",
+            "Stamp the Market Seal on every passport.",
+            "Give one sentence of feedback to the class: one thing that went well, one to practise next time."
+          ],
+          "tip": "Feedback is for the whole class or brigade, never a ranking of single learners."
+        }
+      ],
+      "words": [
+        {
+          "id": "tomato",
+          "en": "tomato",
+          "model": "food/tomato",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "apple",
+          "en": "apple",
+          "model": "food/apple",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "banana",
+          "en": "banana",
+          "model": "food/banana",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "carrot",
+          "en": "carrot",
+          "model": "food/carrot",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "potato",
+          "en": "potato",
+          "model": "kitchen/food_ingredient_potato",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "onion",
+          "en": "onion",
+          "model": "food/onion",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "lemon",
+          "en": "lemon",
+          "model": "food/lemon",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "orange",
+          "en": "orange",
+          "model": "food/orange",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "strawberry",
+          "en": "strawberry",
+          "model": "food/strawberry",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "grapes",
+          "en": "grapes",
+          "model": "food/grapes",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "pepper",
+          "en": "pepper",
+          "model": "food/paprika",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "pear",
+          "en": "pear",
+          "model": "food/pear",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "lettuce",
+          "en": "lettuce",
+          "model": "kitchen/food_ingredient_lettuce",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "mushroom",
+          "en": "mushroom",
+          "model": "food/mushroom",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "corn",
+          "en": "corn",
+          "model": "food/corn",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "broccoli",
+          "en": "broccoli",
+          "model": "food/broccoli",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "watermelon",
+          "en": "watermelon",
+          "model": "food/watermelon",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "eggplant",
+          "en": "eggplant",
+          "model": "food/eggplant",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "pineapple",
+          "en": "pineapple",
+          "model": "food/pineapple",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "pumpkin",
+          "en": "pumpkin",
+          "model": "food/pumpkin",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "red",
+          "en": "red",
+          "model": "food/cherries",
+          "group": "colours",
+          "tags": []
+        },
+        {
+          "id": "green",
+          "en": "green",
+          "model": "food/avocado",
+          "group": "colours",
+          "tags": []
+        },
+        {
+          "id": "yellow",
+          "en": "yellow",
+          "model": "food/lemon-half",
+          "group": "colours",
+          "tags": []
+        },
+        {
+          "id": "bag",
+          "en": "bag",
+          "model": "food/bag",
+          "group": "market",
+          "tags": []
+        }
+      ],
+      "phrases": [
+        {
+          "en": "Do you have tomatoes?",
+          "role": "line-cook"
+        },
+        {
+          "en": "Yes, I do.",
+          "role": "vendor"
+        },
+        {
+          "en": "No, I don't. Sorry!",
+          "role": "vendor"
+        },
+        {
+          "en": "How many?",
+          "role": "vendor"
+        },
+        {
+          "en": "Four, please.",
+          "role": "line-cook"
+        },
+        {
+          "en": "It's two coins.",
+          "role": "vendor"
+        },
+        {
+          "en": "Four tomatoes, please.",
+          "role": "head-chef"
+        },
+        {
+          "en": "We have four tomatoes.",
+          "role": "sous-chef"
+        },
+        {
+          "en": "Thank you! Goodbye!",
+          "role": "line-cook"
+        }
+      ],
+      "cards": [
+        {
+          "kind": "list",
+          "title": "Shopping list",
+          "subtitle": "Only the Head Chef looks at this list.",
+          "for": "head-chef",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "__________",
+              "word": "tomato",
+              "value": "4"
+            },
+            {
+              "text": "__________",
+              "word": "carrot",
+              "value": "3"
+            },
+            {
+              "text": "__________",
+              "word": "onion",
+              "value": "2"
+            },
+            {
+              "text": "__________",
+              "word": "potato",
+              "value": "5"
+            },
+            {
+              "text": "__________",
+              "word": "pepper",
+              "value": "1"
+            },
+            {
+              "text": "__________",
+              "word": "apple",
+              "value": "6"
+            },
+            {
+              "text": "__________",
+              "word": "banana",
+              "value": "3"
+            },
+            {
+              "text": "__________",
+              "word": "lemon",
+              "value": "2"
+            },
+            {
+              "text": "__________",
+              "word": "strawberry",
+              "value": "10"
+            },
+            {
+              "text": "__________",
+              "word": "grapes",
+              "value": "1"
+            }
+          ],
+          "note": "Say the picture and the number. The Sous-Chef writes the word on the line."
+        },
+        {
+          "kind": "menu",
+          "title": "Stall A",
+          "subtitle": "Vendor: you have these foods. Price for one.",
+          "for": "vendor",
+          "copies": "one",
+          "items": [
+            {
+              "text": "tomato",
+              "word": "tomato",
+              "value": "1 coin"
+            },
+            {
+              "text": "carrot",
+              "word": "carrot",
+              "value": "1 coin"
+            },
+            {
+              "text": "potato",
+              "word": "potato",
+              "value": "1 coin"
+            },
+            {
+              "text": "pepper",
+              "word": "pepper",
+              "value": "2 coins"
+            },
+            {
+              "text": "apple",
+              "word": "apple",
+              "value": "2 coins"
+            },
+            {
+              "text": "lemon",
+              "word": "lemon",
+              "value": "1 coin"
+            },
+            {
+              "text": "mushroom",
+              "word": "mushroom",
+              "value": "2 coins"
+            },
+            {
+              "text": "corn",
+              "word": "corn",
+              "value": "2 coins"
+            },
+            {
+              "text": "orange",
+              "word": "orange",
+              "value": "2 coins"
+            }
+          ],
+          "note": "Not on your card? Say: No, I don't. Sorry! Print one Stall A card for every second vendor."
+        },
+        {
+          "kind": "menu",
+          "title": "Stall B",
+          "subtitle": "Vendor: you have these foods. Price for one.",
+          "for": "vendor",
+          "copies": "one",
+          "items": [
+            {
+              "text": "onion",
+              "word": "onion",
+              "value": "1 coin"
+            },
+            {
+              "text": "banana",
+              "word": "banana",
+              "value": "1 coin"
+            },
+            {
+              "text": "strawberry",
+              "word": "strawberry",
+              "value": "1 coin"
+            },
+            {
+              "text": "grapes",
+              "word": "grapes",
+              "value": "3 coins"
+            },
+            {
+              "text": "lettuce",
+              "word": "lettuce",
+              "value": "2 coins"
+            },
+            {
+              "text": "pear",
+              "word": "pear",
+              "value": "2 coins"
+            },
+            {
+              "text": "broccoli",
+              "word": "broccoli",
+              "value": "2 coins"
+            },
+            {
+              "text": "watermelon",
+              "word": "watermelon",
+              "value": "5 coins"
+            },
+            {
+              "text": "tomato",
+              "word": "tomato",
+              "value": "2 coins"
+            }
+          ],
+          "note": "Not on your card? Say: No, I don't. Sorry! With one vendor only, use Stall A and Stall B together."
+        }
+      ],
+      "twists": [
+        {
+          "title": "Colour market",
+          "text": "The vendor asks: What colour? Say the colour before you get the card."
+        },
+        {
+          "title": "Sold out!",
+          "text": "Stall A has no more tomatoes. Ask Stall B: Do you have tomatoes?"
+        },
+        {
+          "title": "Market special",
+          "text": "Everything at Stall B costs one coin for two minutes. Ask: How much?"
+        },
+        {
+          "title": "Picky chef",
+          "text": "The Head Chef wants one more fruit. Choose it, then ask the vendor."
+        }
+      ],
+      "differentiation": {
+        "support": [
+          "Use 8–10 words only and the same 10 foods as the shopping list.",
+          "Line Cooks may carry the phrase strip: Do you have …? / … please.",
+          "Accept a single word plus a number (Tomatoes? Four.) as a good first step."
+        ],
+        "stretch": [
+          "Add colours: Do you have red apples?",
+          "Give each brigade a budget of 25 coins. The Sous-Chef adds up the prices.",
+          "Vendors add one question: Big or small?"
+        ]
+      },
+      "inclusion": [
+        "Vendors can visit the brigades at their tables, so every role works seated.",
+        "The Sous-Chef role (writing and ticking) suits a learner who prefers not to speak much yet.",
+        "Pictures carry the meaning; learners who are new to the alphabet can play every role.",
+        "Fruit and vegetables only: no meat, pork or alcohol in this mission."
+      ],
+      "assessment": {
+        "observe": [
+          "Does the Line Cook use 'Do you have …?' without help after two or three tries?",
+          "Does the vendor answer with 'Yes, I do' or 'No, I don't'?",
+          "Can learners say numbers above 10 (for example, ten strawberries)?"
+        ],
+        "evidence": "The ticked shopping list with the words written by the Sous-Chef, plus each learner's face circles in the Kitchen Passport."
+      },
+      "homeLanguage": "Learners write the home-language word on the back of each word card. A learner may whisper a word to a buddy in a shared language, then the buddy says it in the target language at the stall.",
+      "reflection": [
+        "Circle a face: I can ask 'Do you have …?'.",
+        "Which food word was new for you?",
+        "How many fruits can you name now?",
+        "One word I want to remember: …"
+      ],
+      "extension": "Homework: draw or photograph three fruits or vegetables at home or in a shop (no people in the photo) and write the word and the number.",
+      "seal": {
+        "name": "Market Seal",
+        "motto": "Ask, find, cook!"
+      },
+      "cta": "Let'em shop!"
+    },
+    {
+      "id": "pantry",
+      "order": 2,
+      "location": "The Pantry Mill",
+      "title": "Stock the Pantry",
+      "tagline": "Count it, check it, order it: no empty shelves today!",
+      "host": {
+        "cast": "lena",
+        "name": "Lena",
+        "title": "Pantry Keeper"
+      },
+      "level": "A1+",
+      "minutes": 50,
+      "focus": {
+        "functions": [
+          "Talking about quantities",
+          "Comparing two lists",
+          "Writing a simple order"
+        ],
+        "grammar": [
+          "There is / There are",
+          "How much …? (uncountable) / How many …? (countable)",
+          "a bottle of, a jar of, a packet of, a kilo of, a dozen"
+        ],
+        "vocabulary": "Containers and quantities, pantry food, fridge"
+      },
+      "pitch": [
+        "Hello, cooks! I am Lena, and this is my pantry.",
+        "Bottles, jars, packets… but something is missing from the shelves.",
+        "You have one list, and your partner has another list.",
+        "Talk, compare and find what we need. No peeking!",
+        "Shall we open the pantry door?"
+      ],
+      "summary": "In each brigade, the Head Chef holds the pantry plan (what we need) and the Line Cooks hold the shelf today (what we have). They find six differences by speaking only, then the Sous-Chef writes a stock order. Language: containers, quantities, There is / There are, How much / How many.",
+      "objectives": [
+        "I can say a bottle of, a jar of, a packet of, a kilo of.",
+        "I can ask: How many eggs are there?",
+        "I can say: There is one bottle. There are two jars.",
+        "I can write a short order: We need two bottles of oil."
+      ],
+      "successCriteria": [
+        "Each brigade finds at least 5 of the 6 differences without showing the cards.",
+        "Learners use 'There is' with one item and 'There are' with more than one most of the time.",
+        "Learners choose 'How much' for milk, rice or flour and 'How many' for eggs or potatoes, with help.",
+        "Each brigade writes a stock order with quantity + container + food."
+      ],
+      "materials": [
+        "Word ingredient cards: one set per brigade",
+        "Pantry plan card (Head Chef) and Shelf today card (Line Cooks): one each per brigade",
+        "Stock order form: one per brigade",
+        "Optional: real empty containers (clean bottle, jar, carton, packet, bag)",
+        "A folder or book per brigade to stand up as a screen between the two cards"
+      ],
+      "preparation": [
+        "Print the pack. Keep the Pantry plan and the Shelf today cards in separate piles.",
+        "Optional: bring clean, empty containers for the warm-up.",
+        "Write on the board: There is … / There are … / How much …? / How many …?",
+        "Answer key (6 differences): oil 2 vs 1 bottle; milk 3 vs 1 carton; rice 1 bag vs none; eggs a dozen vs 6; flour 2 vs 1 packet; potatoes 3 vs 1 kilo.",
+        "Expected order: 1 bottle of oil, 2 cartons of milk, 1 bag of rice, 6 eggs, 1 packet of flour, 2 kilos of potatoes."
+      ],
+      "roles": {
+        "teamSize": {
+          "min": 3,
+          "ideal": 4,
+          "max": 5
+        },
+        "perTeam": [
+          {
+            "role": "head-chef",
+            "count": 1
+          },
+          {
+            "role": "sous-chef",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "line-cook",
+            "fill": true
+          }
+        ],
+        "shared": []
+      },
+      "flow": [
+        {
+          "phase": "mise",
+          "minutes": 8,
+          "title": "What is in the box?",
+          "steps": [
+            "Recycle: show five market words (tomato, onion, potato…) and say them together.",
+            "Show each container card (or a real empty one): bottle, jar, packet, can, carton, bag.",
+            "Match game: a bottle of … oil! a carton of … milk! a dozen … eggs!",
+            "Sort cards into two piles: we count it (eggs, onions) / we don't count it (milk, rice)."
+          ],
+          "tip": "Keep grammar light: 'How many' for things we count, 'How much' for things we don't. Use gestures: fingers for many, a pouring hand for much."
+        },
+        {
+          "phase": "order",
+          "minutes": 5,
+          "title": "Lena's empty shelves",
+          "steps": [
+            "Play the Lena pitch, or read it aloud.",
+            "Give out roles. The Head Chef gets the Pantry plan, the Line Cooks get the Shelf today card.",
+            "Put a folder between them as a screen. Rule: talk, don't show.",
+            "Model one line: 'How many bottles of oil are there?' – 'There is one bottle.'"
+          ],
+          "tip": "A quick check in a home language is fine. If a brigade stays in another language for a long time, show a small 'target language, please' card with a smile."
+        },
+        {
+          "phase": "cook",
+          "minutes": 20,
+          "title": "Spot the difference, by speaking",
+          "steps": [
+            "The Head Chef reads one line: 'We need two bottles of oil.'",
+            "The Line Cooks look at their card and answer: 'There is one bottle of oil.'",
+            "Same or different? If different, the Sous-Chef circles it.",
+            "Switch: the Line Cooks ask, the Head Chef answers. Go through all ten foods.",
+            "Then the brigade writes the stock order together: We need …"
+          ],
+          "tip": "If a brigade finishes early, ask them to add two more things they want in the pantry and write them on the order too."
+        },
+        {
+          "phase": "service",
+          "minutes": 10,
+          "title": "Deliver the order",
+          "steps": [
+            "Each brigade reads its stock order to Lena (you) or to another brigade.",
+            "The listeners check with their own order: same or different?",
+            "Show the answer key and celebrate each difference found.",
+            "Put the orders on the wall: our pantry is full!"
+          ],
+          "tip": "The Sous-Chef can hold the paper while the Head Chef reads, so the quiet role is seen and valued."
+        },
+        {
+          "phase": "taste",
+          "minutes": 7,
+          "title": "Taste & Tell",
+          "steps": [
+            "Learners circle a face for each 'I can' sentence on the Kitchen Passport.",
+            "Quick round: each learner says one container + food (a jar of honey).",
+            "Stamp the Pantry Seal.",
+            "Teacher feedback to the class: one thing that went well, one to practise."
+          ],
+          "tip": "A learner can show a card instead of speaking in the round; that still counts."
+        }
+      ],
+      "words": [
+        {
+          "id": "bottle",
+          "en": "bottle",
+          "model": "food/soda-bottle",
+          "group": "containers",
+          "tags": []
+        },
+        {
+          "id": "jar",
+          "en": "jar",
+          "model": "kitchen/jar_A_large",
+          "group": "containers",
+          "tags": []
+        },
+        {
+          "id": "packet",
+          "en": "packet",
+          "model": "food/bag-flat",
+          "group": "containers",
+          "tags": []
+        },
+        {
+          "id": "can",
+          "en": "can",
+          "model": "food/can",
+          "group": "containers",
+          "tags": []
+        },
+        {
+          "id": "carton",
+          "en": "carton",
+          "model": "food/carton",
+          "group": "containers",
+          "tags": []
+        },
+        {
+          "id": "bag",
+          "en": "bag",
+          "model": "food/bag",
+          "group": "containers",
+          "tags": []
+        },
+        {
+          "id": "kilo",
+          "en": "kilo",
+          "model": null,
+          "group": "quantities",
+          "tags": []
+        },
+        {
+          "id": "dozen",
+          "en": "dozen",
+          "model": null,
+          "group": "quantities",
+          "tags": []
+        },
+        {
+          "id": "oil",
+          "en": "oil",
+          "model": "food/bottle-oil",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "milk",
+          "en": "milk",
+          "model": "food/carton-small",
+          "group": "pantry",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "rice",
+          "en": "rice",
+          "model": "food/rice-ball",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "eggs",
+          "en": "eggs",
+          "model": "food/egg",
+          "group": "pantry",
+          "tags": [
+            "egg"
+          ]
+        },
+        {
+          "id": "flour",
+          "en": "flour",
+          "model": null,
+          "group": "pantry",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "potatoes",
+          "en": "potatoes",
+          "model": "kitchen/crate_potatoes",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "water",
+          "en": "water",
+          "model": "food/glass",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "salt",
+          "en": "salt",
+          "model": "food/shaker-salt",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "honey",
+          "en": "honey",
+          "model": "food/honey",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "tomatoes",
+          "en": "tomatoes",
+          "model": "kitchen/crate_tomatoes",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "onions",
+          "en": "onions",
+          "model": "kitchen/crate_onions",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "sugar",
+          "en": "sugar",
+          "model": null,
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "cheese",
+          "en": "cheese",
+          "model": "food/cheese",
+          "group": "pantry",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "bread",
+          "en": "bread",
+          "model": "food/bread",
+          "group": "pantry",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "jam",
+          "en": "jam",
+          "model": "kitchen/jar_B_medium",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "fridge",
+          "en": "fridge",
+          "model": "kitchen/fridge_A",
+          "group": "kitchen",
+          "tags": []
+        }
+      ],
+      "phrases": [
+        {
+          "en": "How many bottles of oil are there?",
+          "role": "head-chef"
+        },
+        {
+          "en": "How much rice is there?",
+          "role": "head-chef"
+        },
+        {
+          "en": "There is one bottle.",
+          "role": "line-cook"
+        },
+        {
+          "en": "There are two jars of honey.",
+          "role": "line-cook"
+        },
+        {
+          "en": "There is no rice.",
+          "role": "line-cook"
+        },
+        {
+          "en": "Same! / Different!",
+          "role": "sous-chef"
+        },
+        {
+          "en": "We need two cartons of milk.",
+          "role": "sous-chef"
+        },
+        {
+          "en": "Can you say it again, please?",
+          "role": "head-chef"
+        }
+      ],
+      "cards": [
+        {
+          "kind": "list",
+          "title": "Pantry plan",
+          "subtitle": "Head Chef: what the pantry needs. Don't show it!",
+          "for": "head-chef",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "oil",
+              "word": "oil",
+              "value": "2 bottles"
+            },
+            {
+              "text": "milk",
+              "word": "milk",
+              "value": "3 cartons"
+            },
+            {
+              "text": "rice",
+              "word": "rice",
+              "value": "1 bag"
+            },
+            {
+              "text": "eggs",
+              "word": "eggs",
+              "value": "a dozen"
+            },
+            {
+              "text": "honey",
+              "word": "honey",
+              "value": "2 jars"
+            },
+            {
+              "text": "tomatoes",
+              "word": "tomatoes",
+              "value": "1 kilo"
+            },
+            {
+              "text": "flour",
+              "word": "flour",
+              "value": "2 packets"
+            },
+            {
+              "text": "water",
+              "word": "water",
+              "value": "6 bottles"
+            },
+            {
+              "text": "salt",
+              "word": "salt",
+              "value": "1 packet"
+            },
+            {
+              "text": "potatoes",
+              "word": "potatoes",
+              "value": "3 kilos"
+            }
+          ],
+          "note": "Ask: How many …? / How much …? Listen: There is … / There are …"
+        },
+        {
+          "kind": "list",
+          "title": "Shelf today",
+          "subtitle": "Line Cooks: what is on the shelf now. Don't show it!",
+          "for": "line-cook",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "oil",
+              "word": "oil",
+              "value": "1 bottle"
+            },
+            {
+              "text": "milk",
+              "word": "milk",
+              "value": "1 carton"
+            },
+            {
+              "text": "rice",
+              "word": "rice",
+              "value": "no rice"
+            },
+            {
+              "text": "eggs",
+              "word": "eggs",
+              "value": "6 eggs"
+            },
+            {
+              "text": "honey",
+              "word": "honey",
+              "value": "2 jars"
+            },
+            {
+              "text": "tomatoes",
+              "word": "tomatoes",
+              "value": "1 kilo"
+            },
+            {
+              "text": "flour",
+              "word": "flour",
+              "value": "1 packet"
+            },
+            {
+              "text": "water",
+              "word": "water",
+              "value": "6 bottles"
+            },
+            {
+              "text": "salt",
+              "word": "salt",
+              "value": "1 packet"
+            },
+            {
+              "text": "potatoes",
+              "word": "potatoes",
+              "value": "1 kilo"
+            }
+          ],
+          "note": "Answer: There is … / There are … Find 6 differences."
+        },
+        {
+          "kind": "form",
+          "title": "Stock order",
+          "subtitle": "What do we need? Write: number + container + food.",
+          "for": "sous-chef",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "Brigade"
+            },
+            {
+              "text": "1. We need …"
+            },
+            {
+              "text": "2. We need …"
+            },
+            {
+              "text": "3. We need …"
+            },
+            {
+              "text": "4. We need …"
+            },
+            {
+              "text": "5. We need …"
+            },
+            {
+              "text": "6. We need …"
+            },
+            {
+              "text": "Checked by the Head Chef"
+            }
+          ],
+          "note": "Example: We need two bottles of oil."
+        }
+      ],
+      "twists": [
+        {
+          "title": "Mouse in the pantry!",
+          "text": "A mouse ate half the bread. Add bread to your stock order."
+        },
+        {
+          "title": "Big party",
+          "text": "Twenty guests are coming. Double one food on your order."
+        },
+        {
+          "title": "Fridge check",
+          "text": "Ask Lena: What is in the fridge? Lena answers with There is / There are."
+        },
+        {
+          "title": "Wrong label",
+          "text": "The honey jar says jam! Tell the brigade: This is not jam, it's honey."
+        }
+      ],
+      "differentiation": {
+        "support": [
+          "Use only bottle, jar, packet, carton, bag and kilo.",
+          "Give a sentence strip: There is one … / There are two …",
+          "Reduce the cards to the first six foods (three differences)."
+        ],
+        "stretch": [
+          "Add 'some' and 'any': Is there any rice? – No, there isn't any rice.",
+          "The brigade adds a price for each item and writes the total.",
+          "Learners plan a dish with the pantry and say what they still need."
+        ]
+      },
+      "inclusion": [
+        "Every role is seated; the screen keeps the task fair without moving around.",
+        "The Sous-Chef circles and writes: good for a learner who wants a quieter job.",
+        "Countable/uncountable differs between languages; welcome comparisons with home languages, and never mark it as a 'mistake' at A1.",
+        "If you bring real containers, use clean and empty ones only; no real food is needed."
+      ],
+      "assessment": {
+        "observe": [
+          "Do learners combine number + container + food (two bottles of oil)?",
+          "Do they use There is / There are with one or more than one item?",
+          "Do they ask for repetition politely when they don't understand?"
+        ],
+        "evidence": "The circled differences and the written stock order of each brigade, plus the face circles in the Kitchen Passport."
+      },
+      "homeLanguage": "Ask learners how their home languages say a bottle of, a kilo of or a dozen, and compare. Some languages count things differently; this curiosity helps learners notice the pattern in the target language.",
+      "reflection": [
+        "Circle a face: I can say a bottle of, a jar of, a packet of.",
+        "Which is easier for you: There is or There are?",
+        "What do you have a lot of in your kitchen? (You can invent!)",
+        "One word I want to remember: …"
+      ],
+      "extension": "Homework: make a list of five things in a kitchen (real or invented) with a container and a number, for example 'two cans of beans'.",
+      "seal": {
+        "name": "Pantry Seal",
+        "motto": "Count it, check it, cook it!"
+      },
+      "cta": "Let'em stock up!"
+    },
+    {
+      "id": "school",
+      "order": 3,
+      "location": "Cooking School",
+      "title": "Follow the Recipe",
+      "tagline": "First listen, then chop: a recipe only works step by step!",
+      "host": {
+        "cast": "olivia",
+        "name": "Chef Olívia",
+        "title": "Head Chef"
+      },
+      "level": "A2",
+      "minutes": 60,
+      "focus": {
+        "functions": [
+          "Giving instructions",
+          "Putting steps in order",
+          "Checking understanding"
+        ],
+        "grammar": [
+          "Imperatives (Chop the onion. Don't add salt yet.)",
+          "Sequencers: first, then, next, after that, finally"
+        ],
+        "vocabulary": "Cooking verbs (chop, peel, slice, boil, fry, mix, stir, add, pour, bake), kitchen tools"
+      },
+      "pitch": [
+        "Welcome to my Cooking School, young chefs!",
+        "Today, the Head Chef has the recipe, but nobody else can see it.",
+        "Listen carefully: first, then, next… and finally!",
+        "Put the steps in order and show me every move.",
+        "Aprons on? Let's cook!"
+      ],
+      "summary": "The Head Chef reads a recipe aloud without showing it. Line Cooks hold the step pictures, shuffled, and need to put them in order and mime each step. Then roles swap and a new Head Chef leads a second recipe. Language: imperatives, cooking verbs and sequencers.",
+      "objectives": [
+        "I can say 10 cooking verbs: chop, peel, boil…",
+        "I can give an instruction: Chop the onion.",
+        "I can put steps in order with first, then, next, finally.",
+        "I can ask: Can you say it again, please?"
+      ],
+      "successCriteria": [
+        "Each brigade puts at least 6 of the 8 step pictures in the correct order.",
+        "The Head Chef uses a sequencer before most steps.",
+        "Line Cooks mime the right verb for each instruction.",
+        "Learners ask for repetition or clarification at least once, in the target language."
+      ],
+      "materials": [
+        "Word ingredient cards: one set per brigade (print at least the first 16 words: they are the step pictures)",
+        "Recipe card A (Vegetable soup) and Recipe card B (Veggie pizza): one each per brigade",
+        "Cooking verbs bingo: one per learner",
+        "Five small paper strips per brigade for the Sous-Chef: First / Then / Next / After that / Finally",
+        "Optional: a spoon, a bowl and a wooden board as mime props"
+      ],
+      "preparation": [
+        "Print the pack with 16 or more words. Cut the word cards.",
+        "For each brigade, make two piles of step pictures. Soup: peel, chop, fry, pour, add, boil, stir, bowl. Pizza: mix, roll, tomato, slice, pepper, onion, bake, knife. Shuffle each pile.",
+        "Keep the recipe cards face down until the Order.",
+        "Write the five sequencers on the board, with arrows between them.",
+        "Answer key: the correct order is the order printed on each recipe card."
+      ],
+      "roles": {
+        "teamSize": {
+          "min": 3,
+          "ideal": 4,
+          "max": 5
+        },
+        "perTeam": [
+          {
+            "role": "head-chef",
+            "count": 1
+          },
+          {
+            "role": "sous-chef",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "line-cook",
+            "fill": true
+          }
+        ],
+        "shared": []
+      },
+      "flow": [
+        {
+          "phase": "mise",
+          "minutes": 8,
+          "title": "Mime the verbs",
+          "steps": [
+            "Show each verb card and mime it: chop, peel, slice, boil, fry, mix, stir, add, pour, bake.",
+            "Learners repeat the word and copy the move.",
+            "Play bingo: you mime a verb, learners find and cross it on the Cooking verbs bingo.",
+            "Recycle: chop the… onion! peel the… potato! slice the… tomato!"
+          ],
+          "tip": "Big, slow gestures help everyone, including learners who are new to reading."
+        },
+        {
+          "phase": "order",
+          "minutes": 6,
+          "title": "Chef Olívia's challenge",
+          "steps": [
+            "Play the Chef Olívia pitch, or read it aloud.",
+            "Give out roles. The Head Chef gets Recipe card A, face down. Line Cooks get the shuffled soup pictures.",
+            "Explain the rule: the Head Chef reads but does not show; Line Cooks listen, order and mime.",
+            "Model one step: 'First, peel the potatoes.' A Line Cook finds 'peel' and mimes."
+          ],
+          "tip": "Tell the class: asking 'Can you say it again, please?' is a chef's skill, not a weakness."
+        },
+        {
+          "phase": "cook",
+          "minutes": 25,
+          "title": "Listen, order, mime",
+          "steps": [
+            "Round 1: the Head Chef reads the soup recipe, one step at a time.",
+            "Line Cooks find the picture, put it in the line and mime the step together.",
+            "The Sous-Chef puts a sequencer strip above each picture (First, Then, Next…).",
+            "At the end, the Head Chef turns the card over and the brigade checks the order.",
+            "Round 2: a new learner becomes Head Chef with Recipe card B (pizza). Repeat."
+          ],
+          "tip": "Walk around and listen. Note one great sentence per brigade to praise in Taste & Tell."
+        },
+        {
+          "phase": "service",
+          "minutes": 13,
+          "title": "The cooking show",
+          "steps": [
+            "Each brigade presents one recipe as a short TV cooking show at its table.",
+            "One learner says the steps with sequencers; the others mime.",
+            "The audience listens and holds up the matching verb on their bingo card.",
+            "Clap for every brigade."
+          ],
+          "tip": "Presenting is a brigade job: learners can choose to speak, mime or hold the pictures."
+        },
+        {
+          "phase": "taste",
+          "minutes": 8,
+          "title": "Taste & Tell",
+          "steps": [
+            "Learners circle a face for each 'I can' sentence on the Kitchen Passport.",
+            "Quick round: 'My favourite verb is … because …' (or just mime it).",
+            "Stamp the School Seal.",
+            "Share the great sentences you heard during the task."
+          ],
+          "tip": "Praise strategies too: 'You asked for repetition, great!'"
+        }
+      ],
+      "words": [
+        {
+          "id": "chop",
+          "en": "chop",
+          "model": "food/cooking-knife-chopping",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "peel",
+          "en": "peel",
+          "model": "kitchen/food_ingredient_potato",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "slice",
+          "en": "slice",
+          "model": "food/tomato-slice",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "boil",
+          "en": "boil",
+          "model": "food/pot",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "fry",
+          "en": "fry",
+          "model": "food/frying-pan",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "mix",
+          "en": "mix",
+          "model": "food/whisk",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "stir",
+          "en": "stir",
+          "model": "food/cooking-spoon",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "add",
+          "en": "add",
+          "model": "food/shaker-salt",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "pour",
+          "en": "pour",
+          "model": "food/bottle-oil",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "bake",
+          "en": "bake",
+          "model": "kitchen/oven",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "roll",
+          "en": "roll",
+          "model": "food/rollingPin",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "bowl",
+          "en": "bowl",
+          "model": "kitchen/bowl",
+          "group": "tools",
+          "tags": []
+        },
+        {
+          "id": "knife",
+          "en": "knife",
+          "model": "kitchen/knife",
+          "group": "tools",
+          "tags": []
+        },
+        {
+          "id": "tomato",
+          "en": "tomato",
+          "model": "food/tomato",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "pepper",
+          "en": "pepper",
+          "model": "food/paprika",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "onion",
+          "en": "onion",
+          "model": "food/onion",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "potato",
+          "en": "potato",
+          "model": "kitchen/crate_potatoes",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "carrot",
+          "en": "carrot",
+          "model": "food/carrot",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "mushroom",
+          "en": "mushroom",
+          "model": "food/mushroom",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "flour",
+          "en": "flour",
+          "model": null,
+          "group": "pantry",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "water",
+          "en": "water",
+          "model": "food/glass",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "pot",
+          "en": "pot",
+          "model": "kitchen/pot_A",
+          "group": "tools",
+          "tags": []
+        },
+        {
+          "id": "pan",
+          "en": "pan",
+          "model": "kitchen/pan_A",
+          "group": "tools",
+          "tags": []
+        },
+        {
+          "id": "cheese",
+          "en": "cheese",
+          "model": "food/cheese",
+          "group": "pantry",
+          "tags": [
+            "dairy"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "en": "First, peel the potatoes.",
+          "role": "head-chef"
+        },
+        {
+          "en": "Then, chop the onion.",
+          "role": "head-chef"
+        },
+        {
+          "en": "Finally, serve the soup.",
+          "role": "head-chef"
+        },
+        {
+          "en": "Can you say it again, please?",
+          "role": "line-cook"
+        },
+        {
+          "en": "Is this step one?",
+          "role": "line-cook"
+        },
+        {
+          "en": "Yes, Chef!",
+          "role": "line-cook"
+        },
+        {
+          "en": "Next comes …",
+          "role": "sous-chef"
+        },
+        {
+          "en": "After that, …",
+          "role": "sous-chef"
+        }
+      ],
+      "cards": [
+        {
+          "kind": "recipe",
+          "title": "Recipe A: Vegetable soup",
+          "subtitle": "Head Chef: read one step at a time. Don't show the card!",
+          "for": "head-chef",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "First, peel the potatoes and the carrots.",
+              "word": "peel"
+            },
+            {
+              "text": "Then, chop the onion.",
+              "word": "chop"
+            },
+            {
+              "text": "Next, fry the onion in a little oil.",
+              "word": "fry"
+            },
+            {
+              "text": "Pour water into the pot.",
+              "word": "pour"
+            },
+            {
+              "text": "Add the potatoes and the carrots.",
+              "word": "add"
+            },
+            {
+              "text": "Boil the soup for 20 minutes.",
+              "word": "boil"
+            },
+            {
+              "text": "After that, stir the soup and add salt.",
+              "word": "stir"
+            },
+            {
+              "text": "Finally, serve the soup in bowls.",
+              "word": "bowl"
+            }
+          ],
+          "note": "Line Cooks: find the picture, put it in line, show the move."
+        },
+        {
+          "kind": "recipe",
+          "title": "Recipe B: Veggie pizza",
+          "subtitle": "Round 2: a new Head Chef reads. Don't show the card!",
+          "for": "head-chef",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "First, mix the flour, water and salt.",
+              "word": "mix"
+            },
+            {
+              "text": "Then, roll the dough.",
+              "word": "roll"
+            },
+            {
+              "text": "Next, add the tomato sauce.",
+              "word": "tomato"
+            },
+            {
+              "text": "Slice the mushrooms and add them.",
+              "word": "slice"
+            },
+            {
+              "text": "Chop the pepper and add it.",
+              "word": "pepper"
+            },
+            {
+              "text": "Add the onion.",
+              "word": "onion"
+            },
+            {
+              "text": "After that, bake the pizza for 15 minutes.",
+              "word": "bake"
+            },
+            {
+              "text": "Finally, cut the pizza and serve it.",
+              "word": "knife"
+            }
+          ],
+          "note": "Swap roles before you start: who is the new Head Chef?"
+        },
+        {
+          "kind": "grid",
+          "title": "Cooking verbs bingo",
+          "subtitle": "Watch the mime. Find the verb. Cross it!",
+          "for": "all",
+          "copies": "perStudent",
+          "items": [
+            {
+              "text": "chop",
+              "word": "chop"
+            },
+            {
+              "text": "peel",
+              "word": "peel"
+            },
+            {
+              "text": "slice",
+              "word": "slice"
+            },
+            {
+              "text": "boil",
+              "word": "boil"
+            },
+            {
+              "text": "fry",
+              "word": "fry"
+            },
+            {
+              "text": "mix",
+              "word": "mix"
+            },
+            {
+              "text": "stir",
+              "word": "stir"
+            },
+            {
+              "text": "pour",
+              "word": "pour"
+            },
+            {
+              "text": "bake",
+              "word": "bake"
+            }
+          ],
+          "note": "Three in a line? Say: Bingo, Chef!"
+        }
+      ],
+      "twists": [
+        {
+          "title": "Oops, no oil!",
+          "text": "There is no oil. The Head Chef changes one step. Line Cooks, listen!"
+        },
+        {
+          "title": "Mirror chef",
+          "text": "The Head Chef mimes one step. Line Cooks say the instruction."
+        },
+        {
+          "title": "Don't do it!",
+          "text": "The Head Chef says one wrong step: Don't add sugar! Cooks shake their heads."
+        },
+        {
+          "title": "Guest chef",
+          "text": "A cook from another brigade gives your next instruction."
+        }
+      ],
+      "differentiation": {
+        "support": [
+          "Use 5 steps instead of 8 (cut the recipe card).",
+          "Give Line Cooks the verb cards only, without the food words.",
+          "The Head Chef can point to the sequencer on the board while reading."
+        ],
+        "stretch": [
+          "Add how and how long: Stir slowly. Boil for 20 minutes.",
+          "Add a negative step: Don't add salt yet.",
+          "Brigades write a third recipe of their own with 5 steps and test it on another brigade."
+        ]
+      },
+      "inclusion": [
+        "All mimes can be done sitting down, with hands only.",
+        "The Sous-Chef places the sequencer strips: a quiet but central job.",
+        "The recipes are vegetarian; the soup is vegan. Food is pretend, nobody eats or touches real food.",
+        "Learners who are new to reading can be Line Cooks first: they listen and work with pictures."
+      ],
+      "assessment": {
+        "observe": [
+          "Does the Head Chef use imperatives correctly (Chop…, not 'You chop…')?",
+          "Are sequencers used to signal each new step?",
+          "Do Line Cooks show understanding with the correct mime?"
+        ],
+        "evidence": "Each brigade's final line of step pictures with sequencer strips (a photo of the table, no faces), plus the Kitchen Passport faces."
+      },
+      "homeLanguage": "Before the task, brigades may whisper how each verb sounds in their home languages and compare. Many cooking verbs have family words; noticing them is a strength. The recipe itself is read in the target language.",
+      "reflection": [
+        "Circle a face: I can say what to do first, then, next, finally.",
+        "Which verb is easy to mime? Which is hard?",
+        "Was it easier to be the Head Chef or a Line Cook?",
+        "One word I want to remember: …"
+      ],
+      "extension": "Homework: write or record a 4-step recipe for a simple snack (real or invented) using first, then, next, finally.",
+      "seal": {
+        "name": "School Seal",
+        "motto": "Step by step, we cook!"
+      },
+      "cta": "Let'em chop!"
+    },
+    {
+      "id": "bakery",
+      "order": 4,
+      "location": "The Bakery",
+      "title": "Taste & Texture",
+      "tagline": "Sweet or salty, soft or crunchy: describe it, guess it, invent it!",
+      "host": {
+        "cast": "luka",
+        "name": "Luka",
+        "title": "Baker"
+      },
+      "level": "A2",
+      "minutes": 50,
+      "focus": {
+        "functions": [
+          "Describing taste and texture",
+          "Comparing food",
+          "Saying what you like and don't like"
+        ],
+        "grammar": [
+          "Comparatives: sweeter than, softer than, more bitter than",
+          "Superlatives: the sweetest, the crunchiest",
+          "I like / I love / I don't like / It's not for me"
+        ],
+        "vocabulary": "Taste and texture adjectives (sweet, salty, sour, bitter, spicy, crunchy, soft, creamy, juicy, fresh), bakery food"
+      },
+      "pitch": [
+        "Mmm, smell that? Good morning, I'm Luka, the baker.",
+        "Something is hiding in my Mystery Box. Is it sweet? Is it crunchy?",
+        "Describe it well, and your brigade can guess it.",
+        "Then, invent a new pastry for my window, with three tasty words.",
+        "Ready to open the box?"
+      ],
+      "summary": "In the Mystery Box game, one learner secretly picks a food card and describes it with taste and texture words; the brigade asks yes/no questions and guesses. Then each brigade invents a new pastry and presents it with three adjectives and one comparison. No real food is needed.",
+      "objectives": [
+        "I can describe food: sweet, salty, crunchy, soft…",
+        "I can compare: A croissant is softer than a cookie.",
+        "I can say what I like: I love it. It's not for me.",
+        "I can present a new pastry with three words."
+      ],
+      "successCriteria": [
+        "Learners describe a hidden food with at least two adjectives so the brigade can guess it.",
+        "Guessers ask yes/no questions (Is it crunchy?) before guessing.",
+        "Each brigade presents its pastry with three adjectives and one comparative.",
+        "Learners give likes and dislikes respectfully, without negative words about others' food."
+      ],
+      "materials": [
+        "Word ingredient cards: one set per brigade",
+        "A bag or box per brigade: the Mystery Box",
+        "Mystery Box bingo: one per learner",
+        "Our new pastry form: one per brigade",
+        "Coloured pencils for drawing the pastry",
+        "Optional, after the safety check: one safe food to taste (nobody has to taste)"
+      ],
+      "preparation": [
+        "Print the pack. Put the 12 bakery food cards (bread to waffle) of each set into a bag or box.",
+        "Write a word bank on the board: taste (sweet, salty, sour, bitter, spicy) and texture (crunchy, soft, creamy, juicy, fresh).",
+        "Write two model sentences: It's sweeter than bread. It's the crunchiest!",
+        "If you plan real tasting: do the food-safety and allergy check first, and use one simple, labelled item."
+      ],
+      "roles": {
+        "teamSize": {
+          "min": 3,
+          "ideal": 4,
+          "max": 5
+        },
+        "perTeam": [
+          {
+            "role": "head-chef",
+            "count": 1
+          },
+          {
+            "role": "sous-chef",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "line-cook",
+            "fill": true
+          }
+        ],
+        "shared": []
+      },
+      "flow": [
+        {
+          "phase": "mise",
+          "minutes": 8,
+          "title": "Taste with your face",
+          "steps": [
+            "Show each adjective card and make a face: sweet (smile), sour (squeeze), spicy (fan your mouth).",
+            "Learners say the word and copy the face.",
+            "Recycle: lemon is… sour! honey is… sweet! (lemon, apple and tomato from the market)",
+            "Quick sort: hold up a food card; learners say one taste and one texture."
+          ],
+          "tip": "Faces and gestures make adjectives memorable and help learners with less reading."
+        },
+        {
+          "phase": "order",
+          "minutes": 5,
+          "title": "Luka's Mystery Box",
+          "steps": [
+            "Play the Luka pitch, or read it aloud.",
+            "Give out roles and one Mystery Box per brigade.",
+            "Model: pick a card secretly, then say 'It's sweet. It's soft. It's softer than bread.'",
+            "The class asks 'Is it creamy?' and guesses: 'Is it a muffin?'"
+          ],
+          "tip": "Remind learners: the describer can't say the name of the food. Pointing to the word bank is allowed."
+        },
+        {
+          "phase": "cook",
+          "minutes": 20,
+          "title": "Describe, guess, invent",
+          "steps": [
+            "Part 1 (10 min): the Head Chef takes a card from the box and describes it. Others ask yes/no questions and guess using the bingo card.",
+            "A correct guess crosses that food on everyone's bingo. Pass the box to the next learner.",
+            "Part 2 (10 min): the brigade invents a new pastry. Choose a name, ingredients and three adjectives.",
+            "The Sous-Chef fills in 'Our new pastry'. Others draw it."
+          ],
+          "tip": "Silly names are welcome (a crunchy-creamy rainbow roll). Creativity brings the language."
+        },
+        {
+          "phase": "service",
+          "minutes": 10,
+          "title": "The bakery window",
+          "steps": [
+            "Each brigade shows its drawing and presents: 'Our pastry is … It's … It's sweeter than …'",
+            "Visitors from other brigades say: 'I'd love to try it because it's …' or 'It's not for me, but …'",
+            "Put all the new pastries on the wall: Luka's new bakery window."
+          ],
+          "tip": "There is no vote for the best pastry. Every pastry gets one kind comment."
+        },
+        {
+          "phase": "taste",
+          "minutes": 7,
+          "title": "Taste & Tell",
+          "steps": [
+            "Learners circle a face for each 'I can' sentence on the Kitchen Passport.",
+            "Round: 'My favourite taste word is …'",
+            "Stamp the Bakery Seal.",
+            "Teacher feedback: one great comparison you heard."
+          ],
+          "tip": "If you did real tasting, ask learners to describe it with two words, and thank those who chose not to taste."
+        }
+      ],
+      "words": [
+        {
+          "id": "sweet",
+          "en": "sweet",
+          "model": "food/cupcake",
+          "group": "taste",
+          "tags": []
+        },
+        {
+          "id": "salty",
+          "en": "salty",
+          "model": "food/shaker-salt",
+          "group": "taste",
+          "tags": []
+        },
+        {
+          "id": "sour",
+          "en": "sour",
+          "model": "food/lemon-half",
+          "group": "taste",
+          "tags": []
+        },
+        {
+          "id": "bitter",
+          "en": "bitter",
+          "model": "food/cup-coffee",
+          "group": "taste",
+          "tags": []
+        },
+        {
+          "id": "spicy",
+          "en": "spicy",
+          "model": "food/pepper",
+          "group": "taste",
+          "tags": []
+        },
+        {
+          "id": "crunchy",
+          "en": "crunchy",
+          "model": "food/cookie",
+          "group": "texture",
+          "tags": []
+        },
+        {
+          "id": "soft",
+          "en": "soft",
+          "model": "food/pudding",
+          "group": "texture",
+          "tags": []
+        },
+        {
+          "id": "creamy",
+          "en": "creamy",
+          "model": "food/whipped-cream",
+          "group": "texture",
+          "tags": []
+        },
+        {
+          "id": "juicy",
+          "en": "juicy",
+          "model": "food/orange",
+          "group": "texture",
+          "tags": []
+        },
+        {
+          "id": "fresh",
+          "en": "fresh",
+          "model": "food/salad",
+          "group": "texture",
+          "tags": []
+        },
+        {
+          "id": "bread",
+          "en": "bread",
+          "model": "food/loaf",
+          "group": "bakery",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "cake",
+          "en": "cake",
+          "model": "food/cake",
+          "group": "bakery",
+          "tags": [
+            "gluten",
+            "egg",
+            "dairy"
+          ]
+        },
+        {
+          "id": "cookie",
+          "en": "cookie",
+          "model": "food/cookie-chocolate",
+          "group": "bakery",
+          "tags": [
+            "gluten",
+            "dairy"
+          ]
+        },
+        {
+          "id": "croissant",
+          "en": "croissant",
+          "model": "food/croissant",
+          "group": "bakery",
+          "tags": [
+            "gluten",
+            "dairy"
+          ]
+        },
+        {
+          "id": "muffin",
+          "en": "muffin",
+          "model": "food/muffin",
+          "group": "bakery",
+          "tags": [
+            "gluten",
+            "egg",
+            "dairy"
+          ]
+        },
+        {
+          "id": "donut",
+          "en": "donut",
+          "model": "food/donut-sprinkles",
+          "group": "bakery",
+          "tags": [
+            "gluten",
+            "egg",
+            "dairy"
+          ]
+        },
+        {
+          "id": "pie",
+          "en": "pie",
+          "model": "food/pie",
+          "group": "bakery",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "chocolate",
+          "en": "chocolate",
+          "model": "food/chocolate",
+          "group": "sweets",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "honey",
+          "en": "honey",
+          "model": "food/honey",
+          "group": "sweets",
+          "tags": []
+        },
+        {
+          "id": "strawberry",
+          "en": "strawberry",
+          "model": "food/strawberry",
+          "group": "fruit",
+          "tags": []
+        },
+        {
+          "id": "ice-cream",
+          "en": "ice cream",
+          "model": "food/ice-cream",
+          "group": "sweets",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "waffle",
+          "en": "waffle",
+          "model": "food/waffle",
+          "group": "bakery",
+          "tags": [
+            "gluten",
+            "egg",
+            "dairy"
+          ]
+        },
+        {
+          "id": "baguette",
+          "en": "baguette",
+          "model": "food/loaf-baguette",
+          "group": "bakery",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "coconut",
+          "en": "coconut",
+          "model": "food/coconut-half",
+          "group": "fruit",
+          "tags": []
+        }
+      ],
+      "phrases": [
+        {
+          "en": "It's sweet and soft.",
+          "role": "head-chef"
+        },
+        {
+          "en": "It's softer than bread.",
+          "role": "head-chef"
+        },
+        {
+          "en": "Is it crunchy?",
+          "role": "line-cook"
+        },
+        {
+          "en": "Is it a muffin?",
+          "role": "line-cook"
+        },
+        {
+          "en": "Yes, it is! / No, it isn't.",
+          "role": "head-chef"
+        },
+        {
+          "en": "I love it!",
+          "role": "customer"
+        },
+        {
+          "en": "It's not for me, thank you.",
+          "role": "customer"
+        },
+        {
+          "en": "It's the crunchiest pastry in town!",
+          "role": "sous-chef"
+        }
+      ],
+      "cards": [
+        {
+          "kind": "grid",
+          "title": "Mystery Box bingo",
+          "subtitle": "Listen to the clues. Guess the food. Cross it!",
+          "for": "all",
+          "copies": "perStudent",
+          "items": [
+            {
+              "text": "bread",
+              "word": "bread"
+            },
+            {
+              "text": "cake",
+              "word": "cake"
+            },
+            {
+              "text": "cookie",
+              "word": "cookie"
+            },
+            {
+              "text": "croissant",
+              "word": "croissant"
+            },
+            {
+              "text": "muffin",
+              "word": "muffin"
+            },
+            {
+              "text": "donut",
+              "word": "donut"
+            },
+            {
+              "text": "pie",
+              "word": "pie"
+            },
+            {
+              "text": "chocolate",
+              "word": "chocolate"
+            },
+            {
+              "text": "honey",
+              "word": "honey"
+            },
+            {
+              "text": "strawberry",
+              "word": "strawberry"
+            },
+            {
+              "text": "ice cream",
+              "word": "ice-cream"
+            },
+            {
+              "text": "waffle",
+              "word": "waffle"
+            }
+          ],
+          "note": "Ask first: Is it sweet? Is it crunchy? Then guess: Is it a …?"
+        },
+        {
+          "kind": "form",
+          "title": "Our new pastry",
+          "subtitle": "Invent it, describe it, draw it on the back.",
+          "for": "team",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "The name of our pastry"
+            },
+            {
+              "text": "It is made with …"
+            },
+            {
+              "text": "Word 1: It is …"
+            },
+            {
+              "text": "Word 2: It is …"
+            },
+            {
+              "text": "Word 3: It is …"
+            },
+            {
+              "text": "It is …-er than …"
+            },
+            {
+              "text": "It's the …-est pastry in town!"
+            },
+            {
+              "text": "It is good for … (breakfast, a party, a picnic)"
+            }
+          ],
+          "note": "Word bank: sweet, salty, sour, bitter, spicy, crunchy, soft, creamy, juicy, fresh."
+        }
+      ],
+      "twists": [
+        {
+          "title": "Silent baker",
+          "text": "Describe the next food with faces and hands only. Then say the words."
+        },
+        {
+          "title": "Opposite day",
+          "text": "Say the opposite: not sweet but… salty! not soft but… crunchy!"
+        },
+        {
+          "title": "Recipe swap",
+          "text": "Add one ingredient from another brigade's pastry to yours."
+        },
+        {
+          "title": "Burnt cookies!",
+          "text": "Oh no! Your pastry is too crunchy. Say how you fix it."
+        }
+      ],
+      "differentiation": {
+        "support": [
+          "Use only five adjectives: sweet, salty, sour, crunchy, soft.",
+          "Describers can point to the word bank and say one word at a time.",
+          "Use 'more … than' for every comparison; the -er forms can come later."
+        ],
+        "stretch": [
+          "Add 'too' and 'not … enough': It's too sweet. It's not crunchy enough.",
+          "Use superlatives in the presentation: the softest, the most creamy, the best.",
+          "Write a short shop sign for the pastry with a price and two sentences."
+        ]
+      },
+      "inclusion": [
+        "No real food is needed: the Mystery Box uses picture cards.",
+        "Real tasting is optional and only after the food-safety and allergy check; nobody has to taste, and a learner can describe instead.",
+        "Respect food from all cultures: use 'It's not for me' instead of negative words. Model this yourself.",
+        "Many bakery items contain gluten, egg or dairy: use the word filter or say 'gluten-free version' where useful."
+      ],
+      "assessment": {
+        "observe": [
+          "Do describers choose adjectives that really help the guessers?",
+          "Do learners form comparatives (sweeter, softer, more bitter)?",
+          "Do learners express dislikes politely?"
+        ],
+        "evidence": "The 'Our new pastry' form with three adjectives and a comparison, plus the Kitchen Passport faces."
+      },
+      "homeLanguage": "Taste words are rich in every language. Invite learners to share a taste or texture word from a language they know that has no easy translation, and add it to the word bank as a gift to the class.",
+      "reflection": [
+        "Circle a face: I can describe food with taste words.",
+        "What is sweeter: honey or an apple?",
+        "Which new word do you like the most?",
+        "One word I want to remember: …"
+      ],
+      "extension": "Homework: describe a favourite snack (or an invented one) in three sentences without saying its name. Next lesson, the class guesses.",
+      "seal": {
+        "name": "Bakery Seal",
+        "motto": "Sweet words, fresh ideas!"
+      },
+      "cta": "Let'em bake!"
+    },
+    {
+      "id": "cafe",
+      "order": 5,
+      "location": "Riverside Café",
+      "title": "Take the Order",
+      "tagline": "Listen, write, call it to the kitchen: every order counts!",
+      "host": {
+        "cast": "noor",
+        "name": "Noor",
+        "title": "Waiter"
+      },
+      "level": "A2",
+      "minutes": 60,
+      "focus": {
+        "functions": [
+          "Ordering politely",
+          "Taking and passing on an order",
+          "Asking for and saying prices"
+        ],
+        "grammar": [
+          "I'd like … / Could I have …?",
+          "Would you like …? / Anything else?",
+          "How much is it? – That's … coins."
+        ],
+        "vocabulary": "Café drinks and dishes, tableware, the menu and the bill, numbers and prices"
+      },
+      "pitch": [
+        "Hello and welcome to the Riverside Café! I'm Noor.",
+        "Guests are coming, and they are hungry and thirsty.",
+        "Take their order, call it to the kitchen, and serve the right plate.",
+        "A smile and a 'please' make every café better.",
+        "Shall we open the doors?"
+      ],
+      "summary": "Brigades run cafés in two sittings: half the brigades are staff while the others are customers, then they swap. Waiters write the order and say it to the kitchen without showing the pad; the kitchen plates picture cards; at the end everyone checks that the plates match the orders. Language: polite requests, prices, a waiter–customer–kitchen relay.",
+      "objectives": [
+        "I can order politely: I'd like a soup, please.",
+        "I can ask: Could I have the bill, please?",
+        "I can take an order and say it to the kitchen.",
+        "I can say and understand prices up to 20."
+      ],
+      "successCriteria": [
+        "Customers use 'I'd like …' or 'Could I have …?' for most orders.",
+        "Waiters pass the order to the kitchen by speaking only, and most plates match the order pad.",
+        "Waiters ask 'Anything else?' and say the total correctly.",
+        "Customers point out a wrong plate politely (Excuse me, I ordered …)."
+      ],
+      "materials": [
+        "Word ingredient cards: two sets per brigade (the kitchen needs more than one of some dishes)",
+        "Café menu: one per brigade",
+        "Order pad: one per brigade (print extra pads for the second sitting)",
+        "Café dialogue card: one per brigade",
+        "Paper plates or paper circles for the kitchen, and a tray",
+        "Optional: table numbers and a little bell for the kitchen pass"
+      ],
+      "preparation": [
+        "Print the pack, and print the word cards twice. Cut them.",
+        "Arrange the room: each brigade has a 'dining table' and a 'kitchen' side, a few steps apart (or back to back).",
+        "Decide the sittings: odd brigades open their café first, even brigades are the first customers.",
+        "Only one brigade? You and the guest of honour are the customers; in the second sitting the brigade swaps waiter and kitchen roles.",
+        "Write on the board: I'd like … / Could I have …? / Anything else? / The bill, please.",
+        "Check the menu prices and totals yourself (soup 4 + juice 3 = 7 coins)."
+      ],
+      "roles": {
+        "teamSize": {
+          "min": 3,
+          "ideal": 4,
+          "max": 5
+        },
+        "perTeam": [
+          {
+            "role": "waiter",
+            "count": 1
+          },
+          {
+            "role": "head-chef",
+            "count": 1
+          },
+          {
+            "role": "sous-chef",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "line-cook",
+            "fill": true
+          }
+        ],
+        "shared": [
+          {
+            "role": "customer",
+            "count": 1,
+            "teacherCanCover": true
+          }
+        ]
+      },
+      "flow": [
+        {
+          "phase": "mise",
+          "minutes": 8,
+          "title": "What's on the menu?",
+          "steps": [
+            "Show the café word cards: drinks first, then dishes, then fork, knife, spoon, napkin.",
+            "Recycle numbers: say a price, learners show it with fingers.",
+            "Chorus practice with a polite voice: I'd like…, please. Could I have…? Thank you!",
+            "Quick quiz: How much is the soup? – Four coins."
+          ],
+          "tip": "Practise intonation: a friendly, rising 'please?' sounds polite in many languages."
+        },
+        {
+          "phase": "order",
+          "minutes": 6,
+          "title": "Noor opens the café",
+          "steps": [
+            "Play the Noor pitch, or read it aloud.",
+            "Give out roles, menus, order pads and the dialogue card.",
+            "Model the full relay with two volunteers: you are the first customer, a learner is the waiter.",
+            "Explain the rule: the waiter says the order to the kitchen. No showing the pad!"
+          ],
+          "tip": "You (or the guest of honour) can visit each café in turn as a customer to model and support."
+        },
+        {
+          "phase": "cook",
+          "minutes": 25,
+          "title": "Two sittings, one relay",
+          "steps": [
+            "Sitting 1 (11 min): staff brigades open their café; customer brigades sit at their tables and read the menu.",
+            "The waiter takes the order and writes it on the pad, then says it at the kitchen: 'Table 2: one soup and one juice!'",
+            "The Head Chef repeats it; the Sous-Chef writes a kitchen ticket; Line Cooks put the picture cards on a plate.",
+            "The waiter serves. Customers ask for the bill. Keep the order pads and tickets.",
+            "Swap (3 min), then Sitting 2 (11 min) with roles reversed."
+          ],
+          "tip": "Ring the bell once to open each sitting and twice for 'last orders', calmly, not as a race."
+        },
+        {
+          "phase": "service",
+          "minutes": 13,
+          "title": "Did the orders match?",
+          "steps": [
+            "Each café puts three things side by side: the order pad, the kitchen ticket and the plates.",
+            "Together they check: same or different? Customers help: 'I ordered the salad, not the soup.'",
+            "Each brigade tells the class one order: 'Table 2 ordered … It was … coins.'",
+            "Customers give one kind sentence to their café: 'The waiter was friendly. The food was fast.'"
+          ],
+          "tip": "A mismatch is a great learning moment: ask which word caused it and practise it together."
+        },
+        {
+          "phase": "taste",
+          "minutes": 8,
+          "title": "Taste & Tell",
+          "steps": [
+            "Learners circle a face for each 'I can' sentence on the Kitchen Passport.",
+            "Round: 'In a café, I can say …'",
+            "Stamp the Café Seal.",
+            "Teacher feedback: one polite phrase you heard many times."
+          ],
+          "tip": "Notice and name good teamwork between waiter and kitchen, not only correct language."
+        }
+      ],
+      "words": [
+        {
+          "id": "menu",
+          "en": "menu",
+          "model": "kitchen/menu",
+          "group": "café",
+          "tags": []
+        },
+        {
+          "id": "coffee",
+          "en": "coffee",
+          "model": "food/cup-coffee",
+          "group": "drinks",
+          "tags": []
+        },
+        {
+          "id": "tea",
+          "en": "tea",
+          "model": "food/cup-tea",
+          "group": "drinks",
+          "tags": []
+        },
+        {
+          "id": "water",
+          "en": "water",
+          "model": "food/glass",
+          "group": "drinks",
+          "tags": []
+        },
+        {
+          "id": "juice",
+          "en": "juice",
+          "model": "food/carton",
+          "group": "drinks",
+          "tags": []
+        },
+        {
+          "id": "soup",
+          "en": "soup",
+          "model": "food/bowl-soup",
+          "group": "dishes",
+          "tags": []
+        },
+        {
+          "id": "salad",
+          "en": "salad",
+          "model": "food/salad",
+          "group": "dishes",
+          "tags": []
+        },
+        {
+          "id": "sandwich",
+          "en": "sandwich",
+          "model": "food/sandwich",
+          "group": "dishes",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "veggie-burger",
+          "en": "veggie burger",
+          "model": "kitchen/food_vegetableburger",
+          "group": "dishes",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "noodles",
+          "en": "noodles",
+          "model": "food/chinese",
+          "group": "dishes",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "pizza",
+          "en": "pizza",
+          "model": "food/pizza",
+          "group": "dishes",
+          "tags": [
+            "gluten",
+            "dairy"
+          ]
+        },
+        {
+          "id": "cake",
+          "en": "cake",
+          "model": "food/cake",
+          "group": "desserts",
+          "tags": [
+            "gluten",
+            "egg",
+            "dairy"
+          ]
+        },
+        {
+          "id": "ice-cream",
+          "en": "ice cream",
+          "model": "food/ice-cream-cup",
+          "group": "desserts",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "bill",
+          "en": "bill",
+          "model": null,
+          "group": "café",
+          "tags": []
+        },
+        {
+          "id": "plate",
+          "en": "plate",
+          "model": "kitchen/plate",
+          "group": "tableware",
+          "tags": []
+        },
+        {
+          "id": "cup",
+          "en": "cup",
+          "model": "food/cup-saucer",
+          "group": "tableware",
+          "tags": []
+        },
+        {
+          "id": "fork",
+          "en": "fork",
+          "model": "food/utensil-fork",
+          "group": "tableware",
+          "tags": []
+        },
+        {
+          "id": "knife",
+          "en": "knife",
+          "model": "food/utensil-knife",
+          "group": "tableware",
+          "tags": []
+        },
+        {
+          "id": "spoon",
+          "en": "spoon",
+          "model": "food/utensil-spoon",
+          "group": "tableware",
+          "tags": []
+        },
+        {
+          "id": "napkin",
+          "en": "napkin",
+          "model": "kitchen/papertowel",
+          "group": "tableware",
+          "tags": []
+        },
+        {
+          "id": "fries",
+          "en": "fries",
+          "model": "food/fries",
+          "group": "dishes",
+          "tags": []
+        },
+        {
+          "id": "hot-chocolate",
+          "en": "hot chocolate",
+          "model": "food/mug",
+          "group": "drinks",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "croissant",
+          "en": "croissant",
+          "model": "food/croissant",
+          "group": "desserts",
+          "tags": [
+            "gluten",
+            "dairy"
+          ]
+        },
+        {
+          "id": "pancakes",
+          "en": "pancakes",
+          "model": "food/pancakes",
+          "group": "desserts",
+          "tags": [
+            "gluten",
+            "egg",
+            "dairy"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "en": "What would you like?",
+          "role": "waiter"
+        },
+        {
+          "en": "Anything else?",
+          "role": "waiter"
+        },
+        {
+          "en": "I'd like the soup, please.",
+          "role": "customer"
+        },
+        {
+          "en": "Could I have a juice, please?",
+          "role": "customer"
+        },
+        {
+          "en": "The bill, please.",
+          "role": "customer"
+        },
+        {
+          "en": "That's seven coins, please.",
+          "role": "waiter"
+        },
+        {
+          "en": "Table two: one soup and one juice!",
+          "role": "waiter"
+        },
+        {
+          "en": "One soup, one juice. Coming!",
+          "role": "head-chef"
+        },
+        {
+          "en": "Excuse me, I ordered the salad.",
+          "role": "customer"
+        }
+      ],
+      "cards": [
+        {
+          "kind": "menu",
+          "title": "Riverside Café menu",
+          "subtitle": "Drinks · Food · Desserts",
+          "for": "all",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "coffee",
+              "word": "coffee",
+              "value": "2 coins"
+            },
+            {
+              "text": "tea",
+              "word": "tea",
+              "value": "2 coins"
+            },
+            {
+              "text": "juice",
+              "word": "juice",
+              "value": "3 coins"
+            },
+            {
+              "text": "water",
+              "word": "water",
+              "value": "1 coin"
+            },
+            {
+              "text": "soup",
+              "word": "soup",
+              "value": "4 coins"
+            },
+            {
+              "text": "salad",
+              "word": "salad",
+              "value": "5 coins"
+            },
+            {
+              "text": "sandwich",
+              "word": "sandwich",
+              "value": "4 coins"
+            },
+            {
+              "text": "veggie burger",
+              "word": "veggie-burger",
+              "value": "6 coins"
+            },
+            {
+              "text": "noodles",
+              "word": "noodles",
+              "value": "5 coins"
+            },
+            {
+              "text": "pizza",
+              "word": "pizza",
+              "value": "6 coins"
+            },
+            {
+              "text": "cake",
+              "word": "cake",
+              "value": "3 coins"
+            },
+            {
+              "text": "ice cream",
+              "word": "ice-cream",
+              "value": "3 coins"
+            }
+          ],
+          "note": "All dishes can be vegetarian. Ask the waiter: Is it vegan?"
+        },
+        {
+          "kind": "form",
+          "title": "Order pad",
+          "subtitle": "Waiter: write the order. Then say it to the kitchen.",
+          "for": "waiter",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "Table number"
+            },
+            {
+              "text": "Guest 1 would like …"
+            },
+            {
+              "text": "Guest 2 would like …"
+            },
+            {
+              "text": "Guest 3 would like …"
+            },
+            {
+              "text": "Guest 4 would like …"
+            },
+            {
+              "text": "Drinks"
+            },
+            {
+              "text": "Anything else?"
+            },
+            {
+              "text": "Total: … coins"
+            }
+          ],
+          "note": "Keep this pad. At the end, check: does the plate match?"
+        },
+        {
+          "kind": "dialogue",
+          "title": "At the café",
+          "subtitle": "Practise in pairs. Then fill the empty lines your way.",
+          "for": "all",
+          "copies": "perTeam",
+          "items": [
+            {
+              "speaker": "waiter",
+              "text": "Hello! Welcome. Here is the menu."
+            },
+            {
+              "speaker": "customer",
+              "text": "Thank you!"
+            },
+            {
+              "speaker": "waiter",
+              "text": "What would you like?"
+            },
+            {
+              "speaker": "customer",
+              "text": "I'd like the soup, please."
+            },
+            {
+              "speaker": "waiter",
+              "text": "Anything else?"
+            },
+            {
+              "speaker": "customer",
+              "text": "Could I have a juice, please?"
+            },
+            {
+              "speaker": "waiter",
+              "text": "Of course! Kitchen: one soup and one juice, please!"
+            },
+            {
+              "speaker": "head-chef",
+              "text": "One soup and one juice. Coming!"
+            },
+            {
+              "speaker": "waiter",
+              "text": "Here you are. Enjoy!"
+            },
+            {
+              "speaker": "customer",
+              "text": "",
+              "blank": true
+            },
+            {
+              "speaker": "customer",
+              "text": "The bill, please."
+            },
+            {
+              "speaker": "waiter",
+              "text": "",
+              "blank": true
+            }
+          ],
+          "note": "Ideas: Thank you, it looks great! / That's seven coins, please."
+        }
+      ],
+      "twists": [
+        {
+          "title": "Change of mind",
+          "text": "A customer changes the order: Sorry, could I have tea, not coffee?"
+        },
+        {
+          "title": "Big table",
+          "text": "Two more guests arrive at one table. The waiter asks: What would you like?"
+        },
+        {
+          "title": "Allergy question",
+          "text": "A customer asks: Is there milk in it? The waiter asks the kitchen."
+        },
+        {
+          "title": "Chef's special",
+          "text": "The kitchen has a special today. The waiter says: Would you like the special?"
+        }
+      ],
+      "differentiation": {
+        "support": [
+          "Use a short menu: four drinks and four dishes.",
+          "Customers may point to the menu and say the dish + please.",
+          "Waiters can tick pictures on the pad instead of writing words."
+        ],
+        "stretch": [
+          "Add 'Would you like …?' offers and 'with/without' (a sandwich without cheese).",
+          "Customers ask a question about a dish: What's in the soup?",
+          "Give each customer a budget (12 coins) to stay within."
+        ]
+      },
+      "inclusion": [
+        "Waiters can serve from a chair with a tray on the table; the kitchen can be right next to the dining table.",
+        "The Sous-Chef writes the kitchen ticket: a central job with little speaking.",
+        "The menu is vegetarian-friendly; the allergy twist models how to ask about ingredients respectfully.",
+        "Everyone is a customer in one sitting, so all learners practise ordering."
+      ],
+      "assessment": {
+        "observe": [
+          "Do customers use polite forms (I'd like / Could I have)?",
+          "How many plates match the order pad? Which words caused mix-ups?",
+          "Can waiters add up the bill and say the total?"
+        ],
+        "evidence": "Order pads and kitchen tickets compared side by side, plus the Kitchen Passport faces."
+      },
+      "homeLanguage": "Ask how people say 'please' and 'the bill, please' in the languages in the room, and write them on a 'polite café' poster. Learners can see that politeness works differently in different languages, and every way is valued.",
+      "reflection": [
+        "Circle a face: I can order politely.",
+        "Was it easier to be the customer or the waiter? Why?",
+        "Which polite phrase will you use outside class?",
+        "One word I want to remember: …"
+      ],
+      "extension": "Homework: write a menu for a tiny café (real or invented) with four drinks, four dishes and prices.",
+      "seal": {
+        "name": "Café Seal",
+        "motto": "Please, thank you, enjoy!"
+      },
+      "cta": "Let'em serve!"
+    },
+    {
+      "id": "festival",
+      "order": 6,
+      "location": "Harbour Food Festival",
+      "title": "Cultures on a Plate",
+      "tagline": "Every dish has a story: ask, listen and discover!",
+      "host": {
+        "cast": "amara",
+        "name": "Amara",
+        "title": "Festival Chef"
+      },
+      "level": "A2+/B1",
+      "minutes": 60,
+      "focus": {
+        "functions": [
+          "Describing a dish",
+          "Asking questions with curiosity",
+          "Showing interest and respect"
+        ],
+        "grammar": [
+          "Present simple: People eat it when … / You need …",
+          "It's made with … / It's called …",
+          "Questions: What's in it? When do people eat it? Is it vegetarian?"
+        ],
+        "vocabulary": "Dishes and ingredients from many kitchens, cooking methods (steam, grill, fry), meals and celebrations"
+      },
+      "pitch": [
+        "Welcome to the Harbour Food Festival! I'm Amara.",
+        "Every brigade opens a stall with one dish: from anywhere you like.",
+        "A dish you love, a dish you know, or a dish you invent today.",
+        "Visitors ask questions, you share the story, and everyone collects stamps.",
+        "Let's light the lanterns and open the festival!"
+      ],
+      "summary": "Each brigade chooses one dish, from anywhere they like (a favourite, one they know, or an invented one), and prepares a festival stall. Visitors carry a festival passport and need to ask questions to fill it in. Nobody has to talk about their home country or family, and there is no vote for a best stall.",
+      "objectives": [
+        "I can say what a dish is made with.",
+        "I can say when people eat it: People eat it for breakfast.",
+        "I can ask about a dish: What's in it? Is it vegetarian?",
+        "I can tell others about a dish I discovered."
+      ],
+      "successCriteria": [
+        "Each brigade can describe its dish with 'It's called…', 'It's made with…', 'You need…' and 'People eat it…'.",
+        "Visitors ask at least three different questions at each stall they visit.",
+        "Passports have information from at least three stalls.",
+        "Learners retell another brigade's dish correctly in the present simple."
+      ],
+      "materials": [
+        "Word ingredient cards: one set per brigade",
+        "Our festival stall form and a large sheet of paper per brigade for the stall poster",
+        "Festival passport: one per learner",
+        "Visitor questions card: one per brigade",
+        "Coloured pencils; a stamp, stickers or a drawn symbol for each stall"
+      ],
+      "preparation": [
+        "Print the pack. Give each brigade a stall symbol (its brigade shape works well) to 'stamp' passports.",
+        "Prepare three backup dish ideas for brigades that want an invented dish: Rainbow rice, Moon noodles, Sunday soup.",
+        "Arrange tables as stalls around the room, with space to walk or roll between them.",
+        "Write the question words on the board: What…? When…? Is it…? Do you need…?",
+        "If you use real food: do the safety and allergy check, label ingredients, and never require tasting."
+      ],
+      "roles": {
+        "teamSize": {
+          "min": 3,
+          "ideal": 4,
+          "max": 5
+        },
+        "perTeam": [
+          {
+            "role": "head-chef",
+            "count": 1
+          },
+          {
+            "role": "sous-chef",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "guardian",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "line-cook",
+            "fill": true
+          }
+        ],
+        "shared": []
+      },
+      "flow": [
+        {
+          "phase": "mise",
+          "minutes": 8,
+          "title": "A world of ingredients",
+          "steps": [
+            "Show the word cards and sort them together: grains, vegetables, protein, sweet things, ways to cook.",
+            "Recycle: chop, fry, boil (Cooking School) and sweet, spicy, crunchy (Bakery).",
+            "Model one dish with the frames: 'It's called pancakes. It's made with flour, milk and eggs. Many people eat it for breakfast.'",
+            "Learners repeat the frames with a dish card of their choice."
+          ],
+          "tip": "Use a dish that many cultures share (pancakes, soup, rice) so no single culture is the example."
+        },
+        {
+          "phase": "order",
+          "minutes": 6,
+          "title": "Amara opens the festival",
+          "steps": [
+            "Play the Amara pitch, or read it aloud.",
+            "Give out roles, the stall form and the visitor questions.",
+            "Say clearly: choose any dish. A favourite, one you know, or an invented one. All are welcome.",
+            "Show the passport and how visitors collect a stamp after three questions."
+          ],
+          "tip": "Never ask a learner to present 'their country's food'. Choice protects everyone and keeps it fun."
+        },
+        {
+          "phase": "cook",
+          "minutes": 25,
+          "title": "Set up and open the stalls",
+          "steps": [
+            "Plan (10 min): the brigade agrees on one dish, fills in the stall form and draws a stall poster.",
+            "Practise (3 min): each member answers one visitor question aloud in the brigade.",
+            "Festival, shift 1 (6 min): half of each brigade hosts the stall; the other half visits other stalls with passports.",
+            "Festival, shift 2 (6 min): swap hosts and visitors.",
+            "Visitors ask, listen and write in the passport; hosts give a stamp after three questions."
+          ],
+          "tip": "Visit stalls as a guest yourself and ask a genuine curious question at each one."
+        },
+        {
+          "phase": "service",
+          "minutes": 13,
+          "title": "What did you discover?",
+          "steps": [
+            "Each learner chooses one stall they visited (not their own).",
+            "In turns, learners tell the class: 'At the Plum stall, the dish is … It's made with … People eat it …'",
+            "The hosting brigade says: 'Yes, that's right!' or adds one detail.",
+            "Close with a festival round of applause for every stall."
+          ],
+          "tip": "There is no voting and no 'best stall'. Every dish is celebrated equally."
+        },
+        {
+          "phase": "taste",
+          "minutes": 8,
+          "title": "Taste & Tell",
+          "steps": [
+            "Learners circle a face for each 'I can' sentence on the Kitchen Passport.",
+            "Round: 'I would like to try … because …'",
+            "Stamp the Festival Seal.",
+            "Teacher feedback: one good question you heard, one new dish word for the class."
+          ],
+          "tip": "Thank brigades for sharing; sharing a dish is a gift, whatever the dish is."
+        }
+      ],
+      "words": [
+        {
+          "id": "rice",
+          "en": "rice",
+          "model": "food/rice-ball",
+          "group": "grains",
+          "tags": []
+        },
+        {
+          "id": "vegetables",
+          "en": "vegetables",
+          "model": "kitchen/crate_carrots",
+          "group": "vegetables",
+          "tags": []
+        },
+        {
+          "id": "bread",
+          "en": "bread",
+          "model": "food/loaf-round",
+          "group": "grains",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "noodles",
+          "en": "noodles",
+          "model": "food/chinese",
+          "group": "grains",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "soup",
+          "en": "soup",
+          "model": "food/bowl-broth",
+          "group": "dishes",
+          "tags": []
+        },
+        {
+          "id": "spices",
+          "en": "spices",
+          "model": "food/mortar-pestle",
+          "group": "flavours",
+          "tags": []
+        },
+        {
+          "id": "sauce",
+          "en": "sauce",
+          "model": "food/soy",
+          "group": "flavours",
+          "tags": []
+        },
+        {
+          "id": "salad",
+          "en": "salad",
+          "model": "food/salad",
+          "group": "dishes",
+          "tags": []
+        },
+        {
+          "id": "stew",
+          "en": "stew",
+          "model": "food/pot-stew",
+          "group": "dishes",
+          "tags": []
+        },
+        {
+          "id": "dumplings",
+          "en": "dumplings",
+          "model": "food/dim-sum",
+          "group": "dishes",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "pancakes",
+          "en": "pancakes",
+          "model": "food/pancakes",
+          "group": "dishes",
+          "tags": [
+            "gluten",
+            "egg",
+            "dairy"
+          ]
+        },
+        {
+          "id": "fruit",
+          "en": "fruit",
+          "model": "food/grapes",
+          "group": "sweet things",
+          "tags": []
+        },
+        {
+          "id": "dessert",
+          "en": "dessert",
+          "model": "food/pudding",
+          "group": "sweet things",
+          "tags": [
+            "egg",
+            "dairy"
+          ]
+        },
+        {
+          "id": "celebration",
+          "en": "celebration",
+          "model": "food/cake-birthday",
+          "group": "occasions",
+          "tags": []
+        },
+        {
+          "id": "breakfast",
+          "en": "breakfast",
+          "model": "food/bowl-cereal",
+          "group": "occasions",
+          "tags": []
+        },
+        {
+          "id": "dinner",
+          "en": "dinner",
+          "model": "food/plate-dinner",
+          "group": "occasions",
+          "tags": []
+        },
+        {
+          "id": "steam",
+          "en": "steam",
+          "model": "food/steamer",
+          "group": "ways to cook",
+          "tags": []
+        },
+        {
+          "id": "grill",
+          "en": "grill",
+          "model": "food/skewer-vegetables",
+          "group": "ways to cook",
+          "tags": []
+        },
+        {
+          "id": "fry",
+          "en": "fry",
+          "model": "food/frying-pan",
+          "group": "ways to cook",
+          "tags": []
+        },
+        {
+          "id": "eggs",
+          "en": "eggs",
+          "model": "food/egg",
+          "group": "protein",
+          "tags": [
+            "egg"
+          ]
+        },
+        {
+          "id": "cheese",
+          "en": "cheese",
+          "model": "food/cheese",
+          "group": "protein",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "fish",
+          "en": "fish",
+          "model": "food/fish",
+          "group": "protein",
+          "tags": [
+            "fish"
+          ]
+        },
+        {
+          "id": "chicken",
+          "en": "chicken",
+          "model": "food/turkey",
+          "group": "protein",
+          "tags": [
+            "meat"
+          ]
+        },
+        {
+          "id": "meat",
+          "en": "meat",
+          "model": "food/meat-cooked",
+          "group": "protein",
+          "tags": [
+            "meat"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "en": "It's called …",
+          "role": "head-chef"
+        },
+        {
+          "en": "It's made with rice and vegetables.",
+          "role": "head-chef"
+        },
+        {
+          "en": "You need a big pot.",
+          "role": "line-cook"
+        },
+        {
+          "en": "Many people eat it for breakfast.",
+          "role": "line-cook"
+        },
+        {
+          "en": "What's in it?",
+          "role": "customer"
+        },
+        {
+          "en": "When do people eat it?",
+          "role": "customer"
+        },
+        {
+          "en": "Is it vegetarian?",
+          "role": "customer"
+        },
+        {
+          "en": "That sounds delicious! Can I have a stamp?",
+          "role": "customer"
+        },
+        {
+          "en": "Here is your stamp!",
+          "role": "sous-chef"
+        }
+      ],
+      "cards": [
+        {
+          "kind": "form",
+          "title": "Our festival stall",
+          "subtitle": "Choose any dish: a favourite, one you know, or a new invention.",
+          "for": "team",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "Our dish is called …"
+            },
+            {
+              "text": "It's made with …"
+            },
+            {
+              "text": "You need … (a pot, a pan, an oven …)"
+            },
+            {
+              "text": "First, you … Then, you …"
+            },
+            {
+              "text": "Many people eat it when … / for …"
+            },
+            {
+              "text": "It tastes … (sweet, spicy, fresh …)"
+            },
+            {
+              "text": "Is it vegetarian? Vegan? Does it have nuts?"
+            },
+            {
+              "text": "Its name in another language (optional)"
+            }
+          ],
+          "note": "Draw your dish on the stall poster. Everyone in the brigade can answer one question."
+        },
+        {
+          "kind": "form",
+          "title": "Festival passport",
+          "subtitle": "Visit three stalls. Ask, listen, write, get a stamp!",
+          "for": "all",
+          "copies": "perStudent",
+          "items": [
+            {
+              "text": "Stall 1: The dish is …"
+            },
+            {
+              "text": "It's made with …"
+            },
+            {
+              "text": "People eat it when …          Stamp:"
+            },
+            {
+              "text": "Stall 2: The dish is …"
+            },
+            {
+              "text": "It's made with …"
+            },
+            {
+              "text": "People eat it when …          Stamp:"
+            },
+            {
+              "text": "Stall 3: The dish is …"
+            },
+            {
+              "text": "It's made with …"
+            },
+            {
+              "text": "People eat it when …          Stamp:"
+            },
+            {
+              "text": "A new word I learned:"
+            },
+            {
+              "text": "I would like to try … because …"
+            }
+          ],
+          "note": "Ask about the dish, not about the person."
+        },
+        {
+          "kind": "dialogue",
+          "title": "Visitor questions",
+          "subtitle": "Visitors ask, stall chefs answer.",
+          "for": "all",
+          "copies": "perTeam",
+          "items": [
+            {
+              "speaker": "customer",
+              "text": "Hello! What's this dish called?"
+            },
+            {
+              "speaker": "head-chef",
+              "text": "It's called …"
+            },
+            {
+              "speaker": "customer",
+              "text": "What's in it?"
+            },
+            {
+              "speaker": "head-chef",
+              "text": "It's made with … and …"
+            },
+            {
+              "speaker": "customer",
+              "text": "When do people eat it?"
+            },
+            {
+              "speaker": "head-chef",
+              "text": "Many people eat it for breakfast / at a celebration / when it's cold."
+            },
+            {
+              "speaker": "customer",
+              "text": "Is it vegetarian?"
+            },
+            {
+              "speaker": "head-chef",
+              "text": "Yes, it is. / No, it has …"
+            },
+            {
+              "speaker": "customer",
+              "text": "",
+              "blank": true
+            },
+            {
+              "speaker": "head-chef",
+              "text": "",
+              "blank": true
+            },
+            {
+              "speaker": "customer",
+              "text": "Thank you! Can I have a stamp, please?"
+            },
+            {
+              "speaker": "head-chef",
+              "text": "Here you are. Enjoy the festival!"
+            }
+          ],
+          "note": "Empty lines: ask your own question! For example: Is it spicy? What do you need?"
+        }
+      ],
+      "twists": [
+        {
+          "title": "Festival lanterns",
+          "text": "Hosts add one more sentence: It tastes … because …"
+        },
+        {
+          "title": "Secret ingredient",
+          "text": "Add one surprise ingredient to your dish. Tell the next visitor about it."
+        },
+        {
+          "title": "Festival friends",
+          "text": "Visit a stall with a partner. Each of you asks a different question."
+        },
+        {
+          "title": "Word swap",
+          "text": "Learn the name of a dish in another language from a host. Write it in your passport."
+        }
+      ],
+      "differentiation": {
+        "support": [
+          "Give a dish picture card to brigades that want a quick start (rice, soup, pancakes).",
+          "Visitors ask the same three questions at every stall.",
+          "Hosts can point to their poster while answering with one or two words."
+        ],
+        "stretch": [
+          "Add 'You can also …' and 'Some people add …' to show variety.",
+          "Visitors ask a follow-up question: Why do people eat it at a celebration?",
+          "Write a short dish description (40–60 words) for the Class Cookbook."
+        ]
+      },
+      "inclusion": [
+        "Choice first: any dish is welcome, including an invented one. Never ask a learner to present a home country, family or journey.",
+        "Avoid generalisations: say 'many people' or 'some people', not 'all people in …'.",
+        "Respect dietary rules: the word filter can hide meat, fish, pork or alcohol; visitors ask 'Is it vegetarian?' as a normal question.",
+        "Stalls are tables: visitors walk or roll to them, and hosts stay seated."
+      ],
+      "assessment": {
+        "observe": [
+          "Do hosts use the present simple correctly (people eat, you need, it has)?",
+          "Do visitors ask open questions (What…? When…?) and not only yes/no questions?",
+          "Do learners show interest and respect (That sounds delicious!)?"
+        ],
+        "evidence": "Completed festival passports and the stall forms, plus the Kitchen Passport faces."
+      },
+      "homeLanguage": "Dish names often have no translation: keep the original name and explain it in the target language. A stall can show the dish name in several languages on the poster, chosen freely by the brigade.",
+      "reflection": [
+        "Circle a face: I can describe a dish.",
+        "Which dish do you want to try? Why?",
+        "Which question was the most useful at the festival?",
+        "One word I want to remember: …"
+      ],
+      "extension": "Homework: find a recipe in a book, online or from a friend (any dish you like) and write three sentences: It's made with … You need … People eat it …",
+      "seal": {
+        "name": "Festival Seal",
+        "motto": "Many kitchens, one table!"
+      },
+      "cta": "Let'em share!"
+    },
+    {
+      "id": "tower",
+      "order": 7,
+      "location": "The Critic's Tower",
+      "title": "The Review",
+      "tagline": "What did you taste? Tell the story, kindly and honestly.",
+      "host": {
+        "cast": "petra",
+        "name": "Petra",
+        "title": "Food Critic"
+      },
+      "level": "B1",
+      "minutes": 60,
+      "focus": {
+        "functions": [
+          "Telling a short story in the past",
+          "Giving opinions with reasons",
+          "Giving kind, useful feedback"
+        ],
+        "grammar": [
+          "Past simple: we went, we ordered, it was, they were",
+          "Past questions: What did you order? How was it? Did you like it?",
+          "Sequencing: first, then, after that, finally"
+        ],
+        "vocabulary": "Restaurant experiences, opinion adjectives, past forms of food verbs (ordered, tried, ate, drank, paid, waited)"
+      },
+      "pitch": [
+        "Good evening. I am Petra, the critic in the tower.",
+        "Last week, I visited two restaurants in our town.",
+        "My notes are only pictures. Ask me questions, and I will tell you the story.",
+        "Then write a review: two stars and a wish. Honest, and always kind.",
+        "Come up to the tower. Shall we begin?"
+      ],
+      "summary": "In each brigade, the Critic holds a picture story of a restaurant visit with prompts like 'order · noodles'. The others interview the Critic with past simple questions and take notes, then write a short 'Two stars and a wish' review together. In Service, the restaurant team (another brigade) listens to the review and thanks the critics.",
+      "objectives": [
+        "I can tell a short story in the past: We went… We ordered…",
+        "I can ask: What did you order? How was it?",
+        "I can give an opinion with a reason: I liked it because…",
+        "I can give two stars and a wish in a kind way."
+      ],
+      "successCriteria": [
+        "The Critic turns most prompts into correct past simple sentences.",
+        "Interviewers ask at least five past simple questions (What did…? How was…? Did you…?).",
+        "Each review has a beginning, a sequence (first, then, after that) and two stars and a wish.",
+        "The wish is specific and kind (Next time, maybe …), not a complaint about people."
+      ],
+      "materials": [
+        "Word ingredient cards: one set per brigade",
+        "Visit cards A (Café Sunflower) and B (The Blue Boat): one per brigade, alternating",
+        "Two stars and a wish review frame: one per brigade",
+        "Scrap paper for interview notes",
+        "Optional: a small star sticker for each finished review"
+      ],
+      "preparation": [
+        "Print the pack. Give Visit A to odd brigades and Visit B to even brigades, so neighbours have different stories.",
+        "Write on the board a past simple bank: go → went, eat → ate, drink → drank, pay → paid, order → ordered, try → tried, wait → waited.",
+        "Write the question frames: What did you …? How was the …? Did you like …? How long did you …?",
+        "Answer key: the sentences in the visit cards' notes are model answers; accept any correct past form."
+      ],
+      "roles": {
+        "teamSize": {
+          "min": 3,
+          "ideal": 4,
+          "max": 5
+        },
+        "perTeam": [
+          {
+            "role": "critic",
+            "count": 1
+          },
+          {
+            "role": "head-chef",
+            "count": 1
+          },
+          {
+            "role": "sous-chef",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "line-cook",
+            "fill": true
+          }
+        ],
+        "shared": []
+      },
+      "flow": [
+        {
+          "phase": "mise",
+          "minutes": 8,
+          "title": "Yesterday in the kitchen",
+          "steps": [
+            "Show verb cards and say: today I order → yesterday I ordered. Learners repeat.",
+            "Play 'Past ping-pong': you say a verb (eat), learners say the past (ate).",
+            "Recycle opinion words from earlier missions: sweet, salty, fresh, delicious, friendly.",
+            "Model one sentence with a reason: 'The soup was delicious because it was hot.'"
+          ],
+          "tip": "Focus on the meaning first; correct forms come with practice. Recast gently instead of interrupting."
+        },
+        {
+          "phase": "order",
+          "minutes": 6,
+          "title": "Petra's notes",
+          "steps": [
+            "Play the Petra pitch, or read it aloud.",
+            "Give out roles. The Critic gets the Visit card; nobody else may look.",
+            "Explain: the prompts are not in the past. The Critic changes them: 'order · noodles' → 'We ordered noodles.'",
+            "Introduce 'Two stars and a wish': two things you liked, one kind idea for next time."
+          ],
+          "tip": "Model a kind wish and an unkind one, and ask the class which one helps a restaurant more."
+        },
+        {
+          "phase": "cook",
+          "minutes": 25,
+          "title": "Interview and write",
+          "steps": [
+            "Interview (12 min): the brigade asks the Critic questions: Where did you go? What did you order? How was it?",
+            "The Critic answers from the picture prompts in the past simple. Others take short notes.",
+            "The Head Chef checks: do we know the whole story, from first to finally?",
+            "Write (13 min): together, the brigade writes the review on the Two stars and a wish frame. The Sous-Chef (or another learner) writes.",
+            "The Critic checks the facts against the Visit card at the end."
+          ],
+          "tip": "If the brigade is stuck, the Critic may show one picture for five seconds, once."
+        },
+        {
+          "phase": "service",
+          "minutes": 13,
+          "title": "Reading at the restaurant",
+          "steps": [
+            "Pair brigades with different visits. One brigade becomes the restaurant team of the other's visit.",
+            "The critics' brigade reads its review aloud, sharing the lines between members.",
+            "The restaurant team answers: 'Thank you for your review. Next time we will …'",
+            "Swap and repeat. Put the reviews on the wall of the tower."
+          ],
+          "tip": "Receiving feedback well is a skill too: praise the restaurant teams for their kind answers."
+        },
+        {
+          "phase": "taste",
+          "minutes": 8,
+          "title": "Taste & Tell",
+          "steps": [
+            "Learners circle a face for each 'I can' sentence on the Kitchen Passport.",
+            "Round: each learner gives one star (something they did well today).",
+            "Stamp the Tower Seal.",
+            "Teacher feedback: two stars and a wish for the class, as a model."
+          ],
+          "tip": "Your wish for the class should be specific and doable next lesson."
+        }
+      ],
+      "words": [
+        {
+          "id": "ordered",
+          "en": "ordered",
+          "model": "kitchen/menu",
+          "group": "past verbs",
+          "tags": []
+        },
+        {
+          "id": "tried",
+          "en": "tried",
+          "model": "food/utensil-fork",
+          "group": "past verbs",
+          "tags": []
+        },
+        {
+          "id": "ate",
+          "en": "ate",
+          "model": "food/sandwich",
+          "group": "past verbs",
+          "tags": []
+        },
+        {
+          "id": "drank",
+          "en": "drank",
+          "model": "food/glass",
+          "group": "past verbs",
+          "tags": []
+        },
+        {
+          "id": "paid",
+          "en": "paid",
+          "model": null,
+          "group": "past verbs",
+          "tags": []
+        },
+        {
+          "id": "waited",
+          "en": "waited",
+          "model": null,
+          "group": "past verbs",
+          "tags": []
+        },
+        {
+          "id": "delicious",
+          "en": "delicious",
+          "model": "food/pie",
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "hot",
+          "en": "hot",
+          "model": "food/bowl-broth",
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "cold",
+          "en": "cold",
+          "model": "food/ice-cream-cup",
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "sweet",
+          "en": "sweet",
+          "model": "food/cupcake",
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "salty",
+          "en": "salty",
+          "model": "food/fries",
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "spicy",
+          "en": "spicy",
+          "model": "food/pepper",
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "fresh",
+          "en": "fresh",
+          "model": "food/salad",
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "friendly",
+          "en": "friendly",
+          "model": null,
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "slow",
+          "en": "slow",
+          "model": null,
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "clean",
+          "en": "clean",
+          "model": "food/plate",
+          "group": "opinions",
+          "tags": []
+        },
+        {
+          "id": "soup",
+          "en": "soup",
+          "model": "food/bowl-soup",
+          "group": "dishes",
+          "tags": []
+        },
+        {
+          "id": "bread",
+          "en": "bread",
+          "model": "food/bread",
+          "group": "dishes",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "noodles",
+          "en": "noodles",
+          "model": "food/chinese",
+          "group": "dishes",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "tea",
+          "en": "tea",
+          "model": "food/cup-tea",
+          "group": "dishes",
+          "tags": []
+        },
+        {
+          "id": "dessert",
+          "en": "dessert",
+          "model": "food/sundae",
+          "group": "dishes",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "pizza",
+          "en": "pizza",
+          "model": "food/pizza",
+          "group": "dishes",
+          "tags": [
+            "gluten",
+            "dairy"
+          ]
+        },
+        {
+          "id": "bill",
+          "en": "bill",
+          "model": null,
+          "group": "restaurant",
+          "tags": []
+        },
+        {
+          "id": "waiter",
+          "en": "waiter",
+          "model": null,
+          "group": "restaurant",
+          "tags": []
+        }
+      ],
+      "phrases": [
+        {
+          "en": "Where did you go?",
+          "role": "line-cook"
+        },
+        {
+          "en": "What did you order?",
+          "role": "line-cook"
+        },
+        {
+          "en": "How was the soup?",
+          "role": "head-chef"
+        },
+        {
+          "en": "Did you like the dessert?",
+          "role": "head-chef"
+        },
+        {
+          "en": "We went to Café Sunflower on Friday.",
+          "role": "critic"
+        },
+        {
+          "en": "It was delicious because it was hot.",
+          "role": "critic"
+        },
+        {
+          "en": "Next time, maybe the dessert can be less sweet.",
+          "role": "sous-chef"
+        },
+        {
+          "en": "Thank you for your review!",
+          "role": "waiter"
+        }
+      ],
+      "cards": [
+        {
+          "kind": "recipe",
+          "title": "Visit A: Café Sunflower",
+          "subtitle": "Critic only. Change each prompt into the past: order → we ordered.",
+          "for": "critic",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "arrive · Friday evening · a friendly waiter says hello",
+              "word": "waiter"
+            },
+            {
+              "text": "order · tomato soup",
+              "word": "ordered"
+            },
+            {
+              "text": "soup · hot and delicious",
+              "word": "hot"
+            },
+            {
+              "text": "try · the bread · very fresh",
+              "word": "bread"
+            },
+            {
+              "text": "eat · pizza · a little salty",
+              "word": "salty"
+            },
+            {
+              "text": "dessert · too sweet",
+              "word": "sweet"
+            },
+            {
+              "text": "drink · tea",
+              "word": "tea"
+            },
+            {
+              "text": "pay · the bill · 14 coins",
+              "word": "paid"
+            }
+          ],
+          "note": "Model: We arrived on Friday evening. A friendly waiter said hello. We ordered tomato soup…"
+        },
+        {
+          "kind": "recipe",
+          "title": "Visit B: The Blue Boat",
+          "subtitle": "Critic only. Change each prompt into the past: wait → we waited.",
+          "for": "critic",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "arrive · Saturday · wait 30 minutes for a table",
+              "word": "waited"
+            },
+            {
+              "text": "order · noodles",
+              "word": "noodles"
+            },
+            {
+              "text": "noodles · cold",
+              "word": "cold"
+            },
+            {
+              "text": "the sauce · very spicy",
+              "word": "spicy"
+            },
+            {
+              "text": "the waiter · friendly · say sorry",
+              "word": "friendly"
+            },
+            {
+              "text": "eat · dessert · delicious",
+              "word": "dessert"
+            },
+            {
+              "text": "the tables · very clean",
+              "word": "clean"
+            },
+            {
+              "text": "pay · the bill · 16 coins",
+              "word": "bill"
+            }
+          ],
+          "note": "Model: We arrived on Saturday. We waited 30 minutes. We ordered noodles, but they were cold…"
+        },
+        {
+          "kind": "form",
+          "title": "Two stars and a wish",
+          "subtitle": "Write your review together. Honest and kind.",
+          "for": "team",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "Restaurant:"
+            },
+            {
+              "text": "Day of the visit:"
+            },
+            {
+              "text": "First, we …"
+            },
+            {
+              "text": "Then, we ordered …"
+            },
+            {
+              "text": "After that, we tried …"
+            },
+            {
+              "text": "Star 1: We liked … because …"
+            },
+            {
+              "text": "Star 2: … was really …"
+            },
+            {
+              "text": "Wish: Next time, maybe …"
+            },
+            {
+              "text": "Reviewed by:"
+            }
+          ],
+          "note": "A good wish helps the restaurant. It talks about food or service, never about a person."
+        }
+      ],
+      "twists": [
+        {
+          "title": "Surprise question",
+          "text": "Ask the Critic one question that is not on the card. The Critic can invent!"
+        },
+        {
+          "title": "Wrong fact",
+          "text": "The Critic says one wrong fact. Can the brigade find it? Ask: Really? Did you…?"
+        },
+        {
+          "title": "The chef answers",
+          "text": "Someone from another brigade plays the chef. Ask them: Why was the soup cold?"
+        },
+        {
+          "title": "Three-word review",
+          "text": "Say your review in only three words. Then say it again in full sentences."
+        }
+      ],
+      "differentiation": {
+        "support": [
+          "Use 5 prompts instead of 8 and give the past forms on a strip.",
+          "Give question cards: What did you …? / How was …?",
+          "Allow the review in note form: Soup – hot, delicious. Dessert – too sweet."
+        ],
+        "stretch": [
+          "Add linking words: but, so, because, although.",
+          "Add one sentence with 'too' or 'not … enough' (The noodles were not hot enough).",
+          "Write a reply from the restaurant to the review (3 sentences)."
+        ]
+      },
+      "inclusion": [
+        "The Critic role suits quieter learners: the picture card supports what they say, and they answer rather than lead.",
+        "Feedback is about food and service, never about people's bodies, accents or cultures.",
+        "All restaurants and visits are invented; learners do not report on real places or experiences.",
+        "Writing is shared: one learner writes, others say the sentences."
+      ],
+      "assessment": {
+        "observe": [
+          "Does the Critic use regular and irregular past forms (ordered, ate, paid, was/were)?",
+          "Do interviewers form past questions with 'did'?",
+          "Is the wish specific, kind and useful?"
+        ],
+        "evidence": "The written 'Two stars and a wish' reviews (one per brigade), plus the Kitchen Passport faces."
+      },
+      "homeLanguage": "Learners can compare how their languages show the past (endings, small words, or context). For the review, a brigade may brainstorm adjectives in any language first, then choose the target-language word together.",
+      "reflection": [
+        "Circle a face: I can tell a short story in the past.",
+        "Which past form was hard for you?",
+        "Was your wish kind and useful? How do you know?",
+        "One word I want to remember: …"
+      ],
+      "extension": "Homework: write a short review (5–6 sentences) of a meal: real or invented, at home, a café or in a film. Use two stars and a wish.",
+      "seal": {
+        "name": "Critic's Seal",
+        "motto": "Honest words, kind words!"
+      },
+      "cta": "Let'em review!"
+    },
+    {
+      "id": "grand",
+      "order": 8,
+      "location": "The Grand Restaurant",
+      "title": "Grand Service",
+      "tagline": "Market, kitchen, service, review: tonight, the whole town cooks together!",
+      "host": {
+        "cast": "yusuf",
+        "name": "Chef Yusuf",
+        "title": "Executive Chef"
+      },
+      "level": "A2–B1",
+      "minutes": 90,
+      "focus": {
+        "functions": [
+          "Planning and buying",
+          "Giving and following instructions",
+          "Serving and ordering politely",
+          "Reviewing kindly"
+        ],
+        "grammar": [
+          "Recycled: Do you have …? / How much …? / imperatives + sequencers / I'd like … / past simple",
+          "It's made with … / Many people eat it when …"
+        ],
+        "vocabulary": "All mission words: market food, containers, cooking verbs, tastes, café and review language"
+      },
+      "pitch": [
+        "Welcome to the Grand Restaurant! I'm Chef Yusuf.",
+        "You walked the whole trail, from the market to the tower.",
+        "Tonight, every brigade shops, cooks, serves and writes one page for our Class Cookbook.",
+        "Use all your words, all your roles, and help each other.",
+        "The ovens are hot. Are you ready for the Grand Service?"
+      ],
+      "summary": "The finale brings every mission together. Brigades choose a dish, buy the ingredients at the Grand Market, write and act out the recipe, serve guests in two sittings and receive a critic's 'two stars and a wish'. Each brigade creates a multilingual page for the Class Cookbook, and the lesson ends with a celebration and certificates. It runs as one 90-minute lesson or as two 45-minute lessons.",
+      "objectives": [
+        "I can buy ingredients: Do you have rice? How much is it?",
+        "I can explain a recipe: First, … Then, … Finally, …",
+        "I can order and serve politely.",
+        "I can help my brigade make a page for our Class Cookbook."
+      ],
+      "successCriteria": [
+        "Each brigade buys its ingredients within 20 coins by asking the vendors.",
+        "Each Cookbook page has ingredients with quantities and at least four steps with sequencers.",
+        "Waiters and customers use polite forms; most plates match the orders.",
+        "Every brigade receives two stars and a wish, and every learner contributes to the page."
+      ],
+      "materials": [
+        "Word ingredient cards: two sets per brigade",
+        "Grand Market card: one per vendor",
+        "Class Cookbook page: one per brigade (plus a large sheet to copy it neatly, optional)",
+        "Grand critic card: one per brigade (for the critic)",
+        "Order pads and menus from the Riverside Café, or blank paper",
+        "Paper coins (20 per brigade), paper plates, coloured pencils",
+        "Certificates (one per brigade) and Kitchen Passports for the final stamp"
+      ],
+      "preparation": [
+        "Print the pack, with the word cards twice. Cut the paper coins: 20 per brigade.",
+        "Set up three areas: the Grand Market (vendor tables), the kitchens (brigade tables) and the dining room.",
+        "Decide the split if you need it: Part 1 ends after the kitchen step; Part 2 starts with the Cookbook page.",
+        "Optional: invite guests (another class or colleagues) for the Service. Ask for consent before any photo.",
+        "Check the Grand Market prices yourself and make sure a dish is possible within 20 coins."
+      ],
+      "roles": {
+        "teamSize": {
+          "min": 3,
+          "ideal": 5,
+          "max": 6
+        },
+        "perTeam": [
+          {
+            "role": "head-chef",
+            "count": 1
+          },
+          {
+            "role": "waiter",
+            "count": 1
+          },
+          {
+            "role": "sous-chef",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "guardian",
+            "count": 1,
+            "optional": true
+          },
+          {
+            "role": "line-cook",
+            "fill": true
+          }
+        ],
+        "shared": [
+          {
+            "role": "vendor",
+            "perTeams": 3,
+            "teacherCanCover": true
+          },
+          {
+            "role": "critic",
+            "count": 1,
+            "teacherCanCover": true
+          }
+        ]
+      },
+      "flow": [
+        {
+          "phase": "mise",
+          "minutes": 10,
+          "title": "The trail recap",
+          "steps": [
+            "Walk the trail on the map: for each mission, the class says one word and one phrase they remember.",
+            "Word cards race (calm version): brigades sort their cards into market, pantry, verbs, tastes and café.",
+            "Recycle in chorus: Do you have…? / There are… / First, chop… / I'd like… / It was…",
+            "Show the roles of today: every role from the trail is in the Grand Restaurant."
+          ],
+          "tip": "Use the passports: learners can look at their stamps and remember what they learned."
+        },
+        {
+          "phase": "order",
+          "minutes": 8,
+          "title": "Chef Yusuf's grand order",
+          "steps": [
+            "Play the Chef Yusuf pitch, or read it aloud.",
+            "Give out roles, coins and the Class Cookbook page.",
+            "Explain the four stations: Market → Kitchen → Cookbook page → Grand Service.",
+            "Each brigade chooses one dish: any dish they like, known or invented."
+          ],
+          "tip": "Brigades can reuse their festival dish or their invented pastry; choice keeps it personal without pressure."
+        },
+        {
+          "phase": "cook",
+          "minutes": 40,
+          "title": "Market, kitchen, cookbook",
+          "steps": [
+            "Plan (5 min): the brigade writes a shopping list with quantities (two kilos of tomatoes, a bottle of oil).",
+            "Market (10 min): Line Cooks buy from the vendors: Do you have …? How much is …? The Sous-Chef keeps the coins.",
+            "Kitchen (12 min): the Head Chef gives the recipe steps with sequencers; Line Cooks mime and put picture cards on a plate. (Split here for two lessons.)",
+            "Cookbook page (13 min): the brigade fills in the Class Cookbook page, draws the dish and writes its name in the languages of the brigade, if they wish."
+          ],
+          "tip": "The Language Guardian keeps time at each station with the bell, calmly. Late is fine; the station still counts."
+        },
+        {
+          "phase": "service",
+          "minutes": 20,
+          "title": "The Grand Service",
+          "steps": [
+            "Two sittings (8 min each): half the brigades serve their dish, the others are guests; then swap.",
+            "Waiters present the dish: It's made with … Would you like to try it? Guests order politely.",
+            "The critic visits each restaurant and fills one Grand critic card per brigade.",
+            "Between sittings (4 min): tidy the tables, swap roles, ring the bell."
+          ],
+          "tip": "Guests from outside the class are welcome: give them the customer phrases on a small card."
+        },
+        {
+          "phase": "taste",
+          "minutes": 12,
+          "title": "Taste & Tell: the celebration",
+          "steps": [
+            "The critic reads the two stars for each brigade aloud. The wishes go to each brigade on paper.",
+            "Each brigade shows its Cookbook page. Put the pages together: our Class Cookbook!",
+            "Give the certificates, one per brigade, and stamp the Grand Seal in every passport.",
+            "Final round: each learner says one word from the whole trail they will keep."
+          ],
+          "tip": "Celebrate effort and growth from Market Square to here. No ranking, no 'best brigade': the whole town cooked."
+        }
+      ],
+      "words": [
+        {
+          "id": "menu",
+          "en": "menu",
+          "model": "kitchen/menu",
+          "group": "restaurant",
+          "tags": []
+        },
+        {
+          "id": "tomato",
+          "en": "tomato",
+          "model": "food/tomato",
+          "group": "market",
+          "tags": []
+        },
+        {
+          "id": "onion",
+          "en": "onion",
+          "model": "food/onion",
+          "group": "market",
+          "tags": []
+        },
+        {
+          "id": "pepper",
+          "en": "pepper",
+          "model": "food/paprika",
+          "group": "market",
+          "tags": []
+        },
+        {
+          "id": "rice",
+          "en": "rice",
+          "model": "food/rice-ball",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "oil",
+          "en": "oil",
+          "model": "food/bottle-oil",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "honey",
+          "en": "honey",
+          "model": "food/honey",
+          "group": "pantry",
+          "tags": []
+        },
+        {
+          "id": "noodles",
+          "en": "noodles",
+          "model": "food/chinese",
+          "group": "pantry",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "flour",
+          "en": "flour",
+          "model": null,
+          "group": "pantry",
+          "tags": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "chop",
+          "en": "chop",
+          "model": "food/cooking-knife-chopping",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "mix",
+          "en": "mix",
+          "model": "food/whisk",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "fry",
+          "en": "fry",
+          "model": "food/frying-pan",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "boil",
+          "en": "boil",
+          "model": "food/pot",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "bake",
+          "en": "bake",
+          "model": "kitchen/oven",
+          "group": "verbs",
+          "tags": []
+        },
+        {
+          "id": "delicious",
+          "en": "delicious",
+          "model": "food/pie",
+          "group": "tastes",
+          "tags": []
+        },
+        {
+          "id": "spicy",
+          "en": "spicy",
+          "model": "food/pepper",
+          "group": "tastes",
+          "tags": []
+        },
+        {
+          "id": "sweet",
+          "en": "sweet",
+          "model": "food/cupcake",
+          "group": "tastes",
+          "tags": []
+        },
+        {
+          "id": "fresh",
+          "en": "fresh",
+          "model": "food/salad",
+          "group": "tastes",
+          "tags": []
+        },
+        {
+          "id": "plate",
+          "en": "plate",
+          "model": "kitchen/plate",
+          "group": "restaurant",
+          "tags": []
+        },
+        {
+          "id": "bill",
+          "en": "bill",
+          "model": null,
+          "group": "restaurant",
+          "tags": []
+        },
+        {
+          "id": "eggs",
+          "en": "eggs",
+          "model": "food/egg",
+          "group": "pantry",
+          "tags": [
+            "egg"
+          ]
+        },
+        {
+          "id": "milk",
+          "en": "milk",
+          "model": "food/carton-small",
+          "group": "pantry",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "cheese",
+          "en": "cheese",
+          "model": "food/cheese",
+          "group": "pantry",
+          "tags": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "fish",
+          "en": "fish",
+          "model": "food/fish",
+          "group": "market",
+          "tags": [
+            "fish"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "en": "Do you have rice? How much is it?",
+          "role": "line-cook"
+        },
+        {
+          "en": "We need a kilo of tomatoes.",
+          "role": "sous-chef"
+        },
+        {
+          "en": "First, chop the onion. Then, fry it.",
+          "role": "head-chef"
+        },
+        {
+          "en": "It's made with rice and vegetables.",
+          "role": "waiter"
+        },
+        {
+          "en": "Would you like to try it?",
+          "role": "waiter"
+        },
+        {
+          "en": "I'd like the soup, please.",
+          "role": "customer"
+        },
+        {
+          "en": "It was delicious because it was fresh.",
+          "role": "critic"
+        },
+        {
+          "en": "Yes, I do. It's three coins.",
+          "role": "vendor"
+        },
+        {
+          "en": "Five minutes to the next station!",
+          "role": "guardian"
+        }
+      ],
+      "cards": [
+        {
+          "kind": "menu",
+          "title": "Grand Market",
+          "subtitle": "Vendor: this is your stock and your prices.",
+          "for": "vendor",
+          "copies": "one",
+          "items": [
+            {
+              "text": "tomatoes · a kilo",
+              "word": "tomato",
+              "value": "2 coins"
+            },
+            {
+              "text": "onions · a kilo",
+              "word": "onion",
+              "value": "2 coins"
+            },
+            {
+              "text": "peppers · one",
+              "word": "pepper",
+              "value": "1 coin"
+            },
+            {
+              "text": "rice · a bag",
+              "word": "rice",
+              "value": "3 coins"
+            },
+            {
+              "text": "noodles · a packet",
+              "word": "noodles",
+              "value": "3 coins"
+            },
+            {
+              "text": "flour · a packet",
+              "word": "flour",
+              "value": "2 coins"
+            },
+            {
+              "text": "eggs · a dozen",
+              "word": "eggs",
+              "value": "4 coins"
+            },
+            {
+              "text": "milk · a carton",
+              "word": "milk",
+              "value": "2 coins"
+            },
+            {
+              "text": "oil · a bottle",
+              "word": "oil",
+              "value": "3 coins"
+            },
+            {
+              "text": "cheese · a piece",
+              "word": "cheese",
+              "value": "4 coins"
+            },
+            {
+              "text": "fish · one",
+              "word": "fish",
+              "value": "5 coins"
+            },
+            {
+              "text": "honey · a jar",
+              "word": "honey",
+              "value": "3 coins"
+            }
+          ],
+          "note": "Each brigade has 20 coins. Not on your card? Say: No, I don't. Sorry! Print one per vendor."
+        },
+        {
+          "kind": "form",
+          "title": "Class Cookbook page",
+          "subtitle": "One page per brigade for our Class Cookbook.",
+          "for": "team",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "Our dish:"
+            },
+            {
+              "text": "Its name in our languages (if you like):"
+            },
+            {
+              "text": "You need (ingredients and how much):"
+            },
+            {
+              "text": "First, …"
+            },
+            {
+              "text": "Then, …"
+            },
+            {
+              "text": "Next, …"
+            },
+            {
+              "text": "Finally, …"
+            },
+            {
+              "text": "It tastes …"
+            },
+            {
+              "text": "Many people eat it when …"
+            },
+            {
+              "text": "Our critic's two stars:"
+            }
+          ],
+          "note": "Draw your dish on the back. Everyone in the brigade writes or draws one part."
+        },
+        {
+          "kind": "form",
+          "title": "Grand critic card",
+          "subtitle": "Critic: one card for each brigade. Honest and kind.",
+          "for": "critic",
+          "copies": "perTeam",
+          "items": [
+            {
+              "text": "Restaurant (brigade):"
+            },
+            {
+              "text": "I ordered …"
+            },
+            {
+              "text": "It was … because …"
+            },
+            {
+              "text": "Star 1:"
+            },
+            {
+              "text": "Star 2:"
+            },
+            {
+              "text": "Wish (for this brigade only): Next time, maybe …"
+            }
+          ],
+          "note": "Read the stars aloud. Give the wish to the brigade on paper."
+        }
+      ],
+      "twists": [
+        {
+          "title": "VIP guest",
+          "text": "A very important guest arrives. Welcome them with your best polite phrase."
+        },
+        {
+          "title": "Market surprise",
+          "text": "The vendor has a special: two items for the price of one. Ask: What's the special?"
+        },
+        {
+          "title": "Kitchen helper",
+          "text": "Send one cook to help another brigade for two minutes. Teach them one step."
+        },
+        {
+          "title": "Toast to the town",
+          "text": "Each brigade says one thank-you sentence to another brigade."
+        }
+      ],
+      "differentiation": {
+        "support": [
+          "Give brigades a ready dish card (vegetable rice, tomato soup) if choosing takes too long.",
+          "Use three recipe steps instead of four, and only the Market and Service stations.",
+          "Pair a newer learner with a buddy at each station."
+        ],
+        "stretch": [
+          "Add a budget challenge: buy everything for 15 coins and explain your choices.",
+          "Write the Cookbook page in full sentences with because, but and so.",
+          "Waiters recommend: I recommend the … because it's …"
+        ]
+      },
+      "inclusion": [
+        "Every station works at tables: vendors and critics can come to the brigades.",
+        "Quiet roles at every station: Sous-Chef (coins and writing), Critic (notes), Language Guardian (time).",
+        "The dish is freely chosen; nobody is asked to share personal or family stories.",
+        "If guests or photos are part of the celebration, check consent first and photograph work rather than faces.",
+        "Real food at the celebration only after the full food-safety, allergy and dietary check; nobody has to eat."
+      ],
+      "assessment": {
+        "observe": [
+          "Which language from earlier missions do learners use without help (market questions, sequencers, polite requests, past simple)?",
+          "Do all brigade members contribute to the Cookbook page?",
+          "Can learners move between roles and adapt their language?"
+        ],
+        "evidence": "The Class Cookbook pages, the Grand critic cards and the full Kitchen Passport with all stamps."
+      },
+      "homeLanguage": "The Class Cookbook is multilingual: each brigade can write the dish name, and if they like one sentence, in the languages they know. Families and friends can read a page in their own language next to the target language.",
+      "reflection": [
+        "Circle a face: I can shop, cook, serve and review in the new language.",
+        "Which mission helped you the most today?",
+        "What are you proud of from the whole trail?",
+        "One word I will keep forever: …"
+      ],
+      "extension": "Make the Class Cookbook into a booklet or a wall display. Learners can take a copy home or share it with another class.",
+      "seal": {
+        "name": "Grand Seal",
+        "motto": "Together, we cooked it all!"
+      },
+      "cta": "Let'em cook!"
+    }
+  ]
+}
