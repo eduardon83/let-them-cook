@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Let'em Cook! · Saffron Valley</title>
+  <meta name="description" content="A 3D mission map for teachers: plan, print and play a restaurant role-play game for language learners." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 36c-7 0-11-5-11-11 0-7 6-12 12-11 2-6 7-9 13-9s11 3 13 9c6-1 12 4 12 11 0 6-4 11-11 11v14H18z' fill='%23fff8ec' stroke='%232b2a33' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M18 50h28v7H18z' fill='%23f2a33a' stroke='%232b2a33' stroke-width='4'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div id="app">
+    <div id="stage-world"><canvas id="world" aria-label="3D map of Saffron Valley. Each building on the trail is a mission."></canvas></div>
+    <div id="labels" aria-hidden="false"></div>
+    <div id="ui"></div>
+    <div id="loader" role="status" aria-live="polite">
+      <div class="loader-card">
+        <div class="loader-pot" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="loader-title">Let'em Cook!</p>
+        <p class="loader-text">Warming up the ovens…</p>
+        <div class="loader-bar"><i></i></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

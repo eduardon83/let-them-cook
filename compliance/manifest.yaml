@@ -1,0 +1,18 @@
+# Product compliance manifest (Kendir guardrails, section 3.1)
+product: lets-em-cook
+audience:
+  users: teachers           # the app is used by adults; learners play on paper
+  learners_min_age: 13
+  context: school
+role_under_gdpr: none       # no personal data is processed by the app or any server
+data_categories: []         # plans, notes and translations stay in the teacher's browser (localStorage)
+special_category_data: false
+ai_features: []
+ai_act_class: none
+third_parties: []           # no network requests at runtime; fonts and assets are bundled
+monetisation: none
+user_generated_content: false   # free-text notes stay local and are never shared by the app
+rewards: brigade stars and mission seals; no individual rankings, no streaks, no loss framing
+motion: reduced-motion respected; no flashing content
+dpia: not required (no personal data processed)
+last_review: 2026-11-18
